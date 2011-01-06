@@ -1,0 +1,162 @@
+#container
+  #main
+    %article#search
+      %object#ubuntulogo(data="images/ubuntu_white-orange_hex.svg" type="image/svg+xml")
+      #engines
+      #input
+        %form#form(onsubmit="return doSearch()")
+          %a#lang(onclick="nextLanguage()" style="display:none;")
+          %input#i.search(type="text" placeholder="Search")
+          %input.go(type="submit" value="Go")          
+        %p#method
+        
+    %article#help
+      //%h2 Help, Support, and Community
+      %section#getting-started
+        %h3 Getting Started
+        %p 
+          Welcome to 
+          = link "Ubuntu!", "http://ubuntu.com/"
+          It is easy to get started. Simply type in a search to start searching with Google.
+        %p 
+          To search for help with Ubuntu just add "Ubuntu" or "help Ubuntu" to your search.
+          You may need to include the 
+          = link "version of Ubuntu", "http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers"
+          you are using (such as 10.04 or 10.10)
+        %p
+          For example: 
+          %em Ubuntu 10.04 how do I view DVDs
+        %p
+          Ubuntu is a large and friendly
+          = link "community", "http://www.ubuntu.com/community"
+          that encourages questions and participation.
+          = link "Canonical", "http://www.canonical.com/"
+          the company that leads the Ubuntu project also offers a number of paid 
+          == #{link "desktop support services", "http://www.ubuntu.com/desktop/services"}.
+        %p
+          You can find out about the
+          = link "new features", "http://www.ubuntu.com/desktop/features"
+          in Ubuntu and learn about 
+          = link "the Ubuntu project", "http://www.ubuntu.com/project"
+          itself.
+        
+      %section#resources
+        %h3 Support Resources
+        %p
+          Ubuntu has a built-in help reference, called the Ubuntu Help Center. 
+          To access it, click on the help icon 
+          %object.inline.icon(data="images/help.svg" type="image/svg+xml")
+          in the top panel. You can also access it by selecting the <em>System</em> 
+          menu and then clicking <em>Help and Support</em>.
+        %p Other online resources are also very useful:
+        %ul.links
+          %li
+            Official
+            = link "Ubuntu Documentation", "http://help.ubuntu.com/"
+            and
+            = link "Community Support", "http://www.ubuntu.com/support/community"
+          %li
+            Community
+            = link "documentation", "http://help.ubuntu.com/community"
+            and 
+            = link "common questions", "http://help.ubuntu.com/community/CommonQuestions"
+          %li
+            = link "AskUbuntu.com", "http://askubuntu.com/"
+            %p.description A great place to ask questions and find answers to particular problems
+          %li
+            = link "Ubuntu community forums", "http://ubuntuforums.org/"
+            %p.description Discussion and help from the community
+          %li
+            = link "Ubuntu Manual Project", "http://ubuntu-manual.org/"
+            %p.description A comprehensive community developed manual for Ubuntu 10.04
+          %li
+            = link "Ubuntu Screencasts", "http://screencasts.ubuntu.com/"
+            %p.description "How to" videos
+            
+          %li.firefox-only(style="display:none")
+            = link "Firefox support", "http://support.mozilla.com/"
+            %p.description If you're having problems with your browser, this is great place to start
+            
+      %section#news
+        %h3 News and Community
+        %p These sites can come in handy for keeping up with Ubuntu news and tips.
+        %ul.links
+          %li
+            = link "Ubuntu News", "http://ubuntu-news.org/"
+            %p.description Also known as "The Fridge", a good place to start with Ubuntu news
+          %li
+            = link "Ubuntu Weekly Newsletter", "http://wiki.ubuntu.com/UbuntuWeeklyNewsletter/Current"
+          %li
+            = link "OMG Ubuntu", "http://www.omgubuntu.co.uk/"
+            %p.description A great blog about the latest developments on Ubuntu and other free software
+          %li
+            = link "Ubuntu Brainstorm", "http://brainstorm.ubuntu.com/"
+            %p.description A place to let the community brainstorm ideas for improving Ubuntu
+          %li
+            = link "Mark Shuttleworth's blog", "http://www.markshuttleworth.com/"
+            %p.description 
+              Ubuntu's founder and lead of design and product strategy at 
+              = link "Canonical Ltd", "http://www.canonical.com/"
+            
+        %h4 For Advanced Community Members:
+        %ul.links.advanced
+          %li
+            = link "Planet Ubuntu", "http://planet.ubuntu.com/"
+            %p.description Blog aggregrator for Ubuntu developers and community members
+          %li
+            = link "Launchpad", "https://launchpad.net/"
+            %p.description 
+              Bug tracking, 
+              = link "PPAs", "http://launchpad.net/ubuntu/+ppas"
+              and project pages
+      
+      %section#freedom
+        %h3 Free and Open Source Software
+        %p 
+          Free software is more than just the bits that you downloaded and installed on your computer. It is 
+          a practice, philosophy and community best illustrated by four principles:
+        %ul
+          %li The freedom to run the program, for any purpose
+          %li The freedom to study how the program works, and change it to make it do what you wish
+          %li The freedom to redistribute copies so you can help your neighbor
+          %li The freedom to distribute copies of your modified versions to others
+        %p 
+          You can learn more about free software at the
+          = link "Free Software Foundation (FSF)", "http://fsf.org/"
+          and open source software at the
+          == #{link "Open Source Initiative (OSI)", "http://www.opensource.org/"}.
+        %p
+          In the spirit of open source, Ubuntu is absolutely free to download, use, share and improve however and whenever you like. 
+    .clearfix
+    
+  %footer
+    %p 
+      Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies. 
+    %p 
+      This webpage is 
+      == #{link "free software", "http://github.com/ryankelln/ubuntuhomepage"}.
+
+%script(src="scripts/jquery-1.4.4.min.js" type="text/javascript")
+%script(src="scripts/tools.js" type="text/javascript")
+%script(src="scripts/scripts.js" type="text/javascript")
+%script(src="engines/base.js" type="text/javascript")
+
+:javascript
+  
+  $(document).ready(function() {
+
+    // denote when field has focus
+    $('input')
+      .blur(function() {
+    	  $(this).removeClass("focus");
+      })
+      .focus(function() {		
+        $(this).addClass("focus")
+    	});
+
+    // show firefox specific tags for firefox browsers
+    var userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('firefox') != -1) {
+      $(".firefox-only").show();
+    }
+  });

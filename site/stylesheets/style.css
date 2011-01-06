@@ -1,0 +1,680 @@
+@font-face {
+  font-family: Ubuntu;
+  src: local("☺"), url("Ubuntu-Regular.woff") format("woff"), url("Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: local("☺"), url("Ubuntu-Bold.woff") format("woff"), url("Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* line 57 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 66 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 69 */
+nav ul {
+  list-style: none;
+}
+
+/* line 72 */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 76 */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 81 */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 85 */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 92 */
+ins {
+  background-color: rgba(255, 255, 153, 0.25);
+  color: #333333;
+  text-decoration: none;
+}
+
+/* line 97 */
+mark {
+  background-color: rgba(255, 255, 153, 0.25);
+  color: #333333;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 103 */
+del {
+  text-decoration: line-through;
+}
+
+/* line 106 */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 110 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 114 */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 122 */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 125 */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 128 */
+body, select, input, textarea {
+  color: #333333;
+}
+
+/* line 131 */
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Ubuntu", "Arimo", "Droid Sans", sans-serif;
+}
+
+/* line 136 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 139 */
+html {
+  overflow-y: scroll;
+}
+
+/* line 142 */
+a {
+  text-decoration: none;
+  color: #5e2750;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+}
+/* line 146 */
+a:hover {
+  outline: none;
+  color: #77216f;
+  text-decoration: underline;
+}
+/* line 150 */
+a:active {
+  outline: none;
+  color: #77216f;
+  text-decoration: underline;
+  text-shadow: 0px 0px 5px rgba(44, 0, 30, 0.33);
+}
+/* line 155 */
+a:visited {
+  color: #2c001e;
+}
+
+/* line 158 */
+ul {
+  margin-left: 1.8em;
+}
+
+/* line 161 */
+ol {
+  margin-left: 1.8em;
+  list-style-type: decimal;
+}
+
+/* line 166 */
+nav ul, nav li {
+  margin: 0;
+}
+
+/* line 169 */
+small {
+  font-size: 85%;
+}
+
+/* line 172 */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 175 */
+td {
+  vertical-align: top;
+}
+/* line 177 */
+td img {
+  vertical-align: top;
+}
+
+/* line 180 */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* line 184 */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 188 */
+pre {
+  padding: 15px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* line 195 */
+textarea {
+  overflow: auto;
+}
+
+/* line 198 */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 202 */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+/* line 204 */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 207 */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 210 */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 213 */
+label {
+  cursor: pointer;
+}
+
+/* line 217 */
+input[type=button], input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 220 */
+button {
+  cursor: pointer;
+  margin: 0;
+}
+
+/* line 224 */
+input, select, textarea {
+  margin: 0;
+}
+
+/* line 229 */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 241 */
+::-moz-selection {
+  color: white;
+  background: #5e2750;
+  text-shadow: none;
+}
+
+/* line 246 */
+::selection {
+  color: white;
+  background: #5e2750;
+  text-shadow: none;
+}
+
+/* line 252 */
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 255 */
+a:link {
+  -webkit-tap-highlight-color: #ff5e99;
+}
+
+/* line 258 */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 262 */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 265 */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 273 */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 277 */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 282 */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 285 */
+.clearfix {
+  zoom: 1;
+}
+/* line 286 */
+.clearfix:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* line 291 */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 303 */
+h1 {
+  font-size: 150%;
+}
+
+/* line 305 */
+h2 {
+  font-size: 125%;
+}
+
+/* line 307 */
+h3 {
+  font-size: 110%;
+}
+
+/* line 314 */
+.inline {
+  display: inline;
+}
+
+/* line 317 */
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 324 */
+#engines {
+  width: 700px;
+  height: 80px;
+  padding-top: 20px;
+  position: relative;
+}
+/* line 329 */
+#engines a {
+  display: block;
+  width: 225px;
+  height: 80px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+/* line 338 */
+#engines a img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 343 */
+#input {
+  margin-top: 30px;
+}
+
+/* line 346 */
+.ubuntu-button, #lang, #method a {
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(174, 167, 159, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-decoration: none !important;
+  outline: none;
+}
+/* line 355 */
+.ubuntu-button.active, .active#lang, #method a.active, .ubuntu-button.active:hover, .active#lang:hover, #method a.active:hover {
+  background: #dd4814;
+  color: white;
+}
+/* line 358 */
+.ubuntu-button:hover, #lang:hover, #method a:hover {
+  color: white;
+  background: rgba(174, 167, 159, 0.2);
+}
+/* line 361 */
+.ubuntu-button:active, #lang:active, #method a:active {
+  background: #ae3910;
+}
+
+/* line 364 */
+#lang {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 3px 6px;
+  width: 20px;
+  position: absolute;
+  left: 80px;
+  margin-top: 1px;
+}
+
+/* line 374 */
+#method {
+  text-align: center;
+  margin: 30px 0 30px 150px;
+  width: 400px;
+}
+/* line 378 */
+#method a {
+  padding: 3px 6px;
+  margin: 0 2px;
+}
+
+/* line 383 */
+#search {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background: -moz-radial-gradient(0% 0%, circle farthest-corner, #77216f 0%, #2c001e 100%);
+  background: -webkit-gradient(radial, 100 100, 1, 100 100, 2000, from(#77216f), to(#2c001e));
+  width: 100%;
+  height: 280px;
+  min-width: 875px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* line 398 */
+input.search {
+  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.5)), to(rgba(34, 11, 40, 0.5)));
+  border: solid 0px black;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline;
+  font: normal 16px/100% ubuntu, helvetica, arial, sans-serif;
+  font-weight: bold;
+  height: 30px;
+  width: 400px;
+  margin: 0px;
+  margin-left: 120px;
+  outline: 0;
+  padding-left: 10px;
+  text-shadow: 1px 1px 3px rgba(1, 0, 2, 0.5);
+}
+
+/* line 426 */
+input.search:hover, input.search:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.7)), to(rgba(34, 11, 40, 0.7)));
+  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7));
+}
+
+/* line 430 */
+input.go {
+  background: #dd4814;
+  background: -moz-linear-gradient(top, #dd4814, #ae3910);
+  background: -webkit-gradient(linear, left top, left bottom, from(#dd4814), to(#ae3910));
+  border: 0px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1);
+  color: white;
+  display: inline;
+  position: relative;
+  left: -4px;
+  font: normal 14px/100% ubuntu, helvetica, arial, sans-serif;
+  font-weight: bold;
+  height: 32px;
+  margin: 0px;
+  text-shadow: 0px 1px 3px #261102;
+  width: 4em;
+  outline: none;
+}
+/* line 455 */
+input.go:hover {
+  background: #ed6637;
+  background: -moz-linear-gradient(top, #ed6637, #dd4814);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ed6637), to(#dd4814));
+}
+/* line 459 */
+input.go:active {
+  background: #ae3910;
+  background: -moz-linear-gradient(top, #ae3910, #dd4814);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ae3910), to(#dd4814));
+}
+
+/* line 464 */
+#ubuntulogo {
+  position: absolute;
+  bottom: 40%;
+  right: 30px;
+  width: 25%;
+}
+
+/* line 474 */
+#help {
+  padding-top: 30px;
+  padding-left: 120px;
+  color: #333333;
+  min-height: 100%;
+}
+/* line 480 */
+#help ul {
+  padding-left: 1em;
+}
+/* line 482 */
+#help ul li {
+  margin: 0.25em 0;
+}
+/* line 485 */
+#help ul.links {
+  list-style: none;
+  margin: 0;
+}
+/* line 488 */
+#help ul.links li {
+  margin-bottom: 0.5em;
+}
+/* line 490 */
+#help ul.links .description {
+  font-size: 80%;
+  line-height: 1.2em;
+  padding-left: 1em;
+}
+/* line 495 */
+#help p {
+  margin-bottom: 0.5em;
+}
+/* line 497 */
+#help p:last-child {
+  margin-bottom: 0;
+}
+/* line 500 */
+#help section {
+  padding: 2em 0;
+  width: 40%;
+  float: left;
+  margin-right: 5%;
+  min-height: 19em;
+}
+/* line 506 */
+#help section h3 {
+  margin-bottom: 0.5em;
+}
+
+/* line 509 */
+footer {
+  font-size: 80%;
+  margin-top: 1em;
+  padding: 1em 120px;
+  background: #aea79f;
+}
+
+@media all and (orientation:portrait);
+@media all and (orientation:landscape);
+@media screen and (max-device-width: 480px) {}
+@media print {
+  /* line 529 */
+  * {
+    background: transparent !important;
+    color: #444444 !important;
+    text-shadow: none !important;
+  }
+
+  /* line 533 */
+  a {
+    color: #444444 !important;
+    text-decoration: underline;
+  }
+  /* line 536 */
+  a:visited {
+    color: #444444 !important;
+    text-decoration: underline;
+  }
+  /* line 539 */
+  a:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 541 */
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 543 */
+  .ir a:after {
+    content: "";
+  }
+
+  /* line 545 */
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 548 */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 550 */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 555 */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 558 */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

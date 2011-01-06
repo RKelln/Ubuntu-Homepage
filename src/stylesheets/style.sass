@@ -1,0 +1,559 @@
+//
+// Many thanks to spiceofdesign for design concept, css and images:
+// http://spiceofdesign.deviantart.com/art/Ubuntu-Homepage-189798952
+// 
+// Thanks also to Philipp Antoni's and the http://go.infinise.com/ project 
+// for css, images and design inspiration.
+//
+// Thanks to the HTML5Boilerplate project http://html5boilerplate.com/ 
+// for reset and html5 best practices.
+
+//  EMBEDDED FONT FAMILIES
+//  ----------------------------------------------------
+@font-face
+  font-family: Ubuntu
+  src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.ttf') format('truetype')
+
+@font-face
+  font-family: Ubuntu
+  src: local('☺'), url('Ubuntu-Bold.woff') format('woff'), url('Ubuntu-Bold.ttf') format('truetype')
+  font-weight: bold
+
+//  SASS variables
+//  ----------------------------------------------------
+$ubuntu-orange: #DD4814
+$ubuntu-white: #FFFFFF
+$ubuntu-light-aubergine: #77216F
+$ubuntu-mid-aubergine: #5E2750 
+$ubuntu-dark-aubergine: #2C001E
+$ubuntu-warm-grey: #AEA79F 
+$ubuntu-small-dot-grey: #AEA79F 
+$ubuntu-cool-grey: #333333 
+$ubuntu-text-grey: #333333
+
+$button-color: $ubuntu-orange
+$button-text-color: $ubuntu-white
+$button-text-shadow: #261102
+
+$text-color: $ubuntu-text-grey
+
+$link-color: $ubuntu-mid-aubergine
+$link-visited-color: $ubuntu-dark-aubergine
+$link-hover-color: $ubuntu-light-aubergine
+
+$search-height: 30px
+$search-width: 400px
+$search-left: 120px
+$search-top: 100px
+$search-font-size: 16px
+
+$default-border-radius: 3px
+
+//  RESET and DEFAULTS
+//  -----------------------------------------------------
+//  from HTML5 ✰ Boilerplate
+//  http://html5boilerplate.com/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+nav ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+ins
+  background-color: rgba(#ff9, 0.25)
+  color: $text-color
+  text-decoration: none
+
+mark
+  background-color: rgba(#ff9, 0.25)
+  color: $text-color
+  font-style: italic
+  font-weight: bold
+
+del
+  text-decoration: line-through
+
+abbr[title], dfn[title]
+  border-bottom: 1px dotted
+  cursor: help
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 1em 0
+  padding: 0
+
+input, select
+  vertical-align: middle
+
+pre, code, kbd, samp
+  font-family: monospace, sans-serif
+
+body, select, input, textarea
+  color: $text-color
+
+body
+  font-size: 16px
+  line-height: 1.5em
+  font-family: 'Ubuntu', 'Arimo', 'Droid Sans', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
+html
+  overflow-y: scroll
+
+a
+  text-decoration: none
+  color: $link-color
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
+  &:hover
+    outline: none
+    color: $link-hover-color
+    text-decoration: underline
+  &:active
+    outline: none
+    color: $link-hover-color
+    text-decoration: underline
+    text-shadow: 0px 0px 5px rgba($link-visited-color, 0.33)
+  &:visited
+    color: $link-visited-color
+
+ul
+  margin-left: 1.8em
+
+ol
+  margin-left: 1.8em
+  list-style-type: decimal
+
+nav
+  ul, li
+    margin: 0
+
+small
+  font-size: 85%
+
+strong, th
+  font-weight: bold
+
+td
+  vertical-align: top
+  img
+    vertical-align: top
+
+sub
+  vertical-align: sub
+  font-size: smaller
+
+sup
+  vertical-align: super
+  font-size: smaller
+
+pre
+  padding: 15px
+  white-space: pre
+  white-space: pre-wrap
+  white-space: pre-line
+  word-wrap: break-word
+
+textarea
+  overflow: auto
+
+.ie6 legend, .ie7 legend
+  margin-left: -7px
+
+input
+  &[type="radio"]
+    vertical-align: text-bottom
+  &[type="checkbox"]
+    vertical-align: bottom
+
+.ie7 input[type="checkbox"]
+  vertical-align: baseline
+
+.ie6 input
+  vertical-align: text-bottom
+
+label
+  cursor: pointer
+
+input
+  &[type=button], &[type=submit]
+    cursor: pointer
+
+button
+  cursor: pointer
+  margin: 0
+
+input, select, textarea
+  margin: 0
+
+input:valid, textarea:valid
+
+input:invalid, textarea:invalid
+  border-radius: 1px
+  -moz-box-shadow: 0px 0px 5px red
+  -webkit-box-shadow: 0px 0px 5px red
+  box-shadow: 0px 0px 5px red
+
+=accessible-color($background: white)
+  @if lightness($background) >= 65%
+    color: $font-color
+  @else
+    color: white
+
+\::-moz-selection
+  +accessible-color($link-color)
+  background: $link-color
+  text-shadow: none
+
+\::selection
+  +accessible-color($link-color)
+  background: $link-color
+  text-shadow: none
+
+.no-boxshadow
+  input:invalid, textarea:invalid
+    background-color: #f0dddd
+
+a:link
+  -webkit-tap-highlight-color: #FF5E99
+
+button
+  width: auto
+  overflow: visible
+
+.ie7 img
+  -ms-interpolation-mode: bicubic
+
+.ir
+  display: block
+  text-indent: -999em
+  overflow: hidden
+  background-repeat: no-repeat
+  text-align: left
+  direction: ltr
+
+.hidden
+  display: none
+  visibility: hidden
+
+.visuallyhidden
+  position: absolute !important
+  clip: rect(1px 1px 1px 1px)
+  clip: rect(1px, 1px, 1px, 1px)
+
+.invisible
+  visibility: hidden
+
+.clearfix
+  &:before
+    content: "\0020"
+    display: block
+    height: 0
+    visibility: hidden
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    visibility: hidden
+    clear: both
+  zoom: 1
+
+
+//  FONTS
+//  -----------------------------------------------------
+
+h1
+  font-size: 150%
+h2
+  font-size: 125%
+h3
+  font-size: 110%
+
+
+//  HELPER CLASSES
+//  -----------------------------------------------------
+
+.inline
+  display: inline
+  
+.icon
+  width: 16px
+  height: 16px
+
+
+// 	SEARCH
+//	-----------------------------------------------------
+#engines
+  width: 700px
+  height: 80px
+  padding-top: 20px
+  position: relative
+  a
+    display: block
+    width: 225px
+    height: 80px
+    cursor: pointer
+    opacity: 0.0
+    position: absolute
+    -webkit-border-radius: $default-border-radius
+    -moz-border-radius: $default-border-radius
+    img
+      display: block
+      height: 100%
+      width: 100%
+
+#input
+  margin-top: $search-height
+  
+.ubuntu-button
+  text-align: center
+  cursor: pointer
+  color: rgba($button-text-color, 0.8)
+  background: rgba($ubuntu-warm-grey, 0.1)
+  -webkit-border-radius: $default-border-radius
+  -moz-border-radius: $default-border-radius
+  text-decoration: none !important
+  outline: none
+  &.active, &.active:hover
+    background: $button-color
+    color: $button-text-color
+  &:hover
+    color: $button-text-color
+    background: rgba($ubuntu-warm-grey, 0.2)
+  &:active
+    background: darken($button-color, 10%)
+
+#lang
+  @extend .ubuntu-button
+  font-size: 13px
+  font-weight: bold
+  padding: 3px 6px
+  width: 20px
+  position: absolute
+  left: $search-left - 40px
+  margin-top: 1px
+  
+#method
+  text-align: center
+  margin: $search-height 0 $search-height ($search-left + 30px)
+  width: $search-width
+  a
+    @extend .ubuntu-button
+    padding: 3px 6px
+    margin: 0 2px
+    
+#search
+  position: relative
+  margin: 0px
+  padding: 0px
+  //padding-top: 30px
+  background: -moz-radial-gradient(0% 0%, circle farthest-corner, $ubuntu-light-aubergine 0%, $ubuntu-dark-aubergine 100%)
+  background: -webkit-gradient(radial, 100 100, 1, 100 100, 2000, from($ubuntu-light-aubergine), to($ubuntu-dark-aubergine))
+  width: 100%
+  height: 280px
+  min-width: 875px
+  
+  box-shadow: 0px 3px 3px rgba(0,0,0, 0.5)
+  -moz-box-shadow: 0px 3px 3px rgba(0,0,0, 0.5)
+  -webkit-box-shadow: 0px 3px 3px rgba(0,0,0, 0.5)
+
+input.search
+  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5))
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.5)), to(rgba(34, 11, 40, 0.5)))  
+  border: solid 0px #000
+  border-bottom-left-radius: $default-border-radius
+  border-top-left-radius: $default-border-radius
+  -moz-border-radius-bottomleft: $default-border-radius
+  -moz-border-radius-topleft: $default-border-radius
+  -webkit-border-bottom-left-radius: $default-border-radius
+  -webkit-border-top-left-radius: $default-border-radius
+  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  color: rgba($button-text-color, 0.8)
+  display: inline
+  font: normal 16px / 100% ubuntu, helvetica, arial, sans-serif
+  font-weight: bold
+  height: $search-height
+  width: $search-width
+  margin: 0px
+  margin-left: $search-left
+  //top: $search-top  
+  outline: 0
+  padding-left: 10px
+  //position: absolute
+  text-shadow: 1px 1px 3px rgba(1, 0, 2, 0.5)
+  
+
+input.search:hover, input.search:focus
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.7)), to(rgba(34, 11, 40, 0.7)))
+  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7))
+
+input.go
+  background: $button-color
+  background: -moz-linear-gradient(top, $button-color, darken($button-color, 10%))
+  background: -webkit-gradient(linear, left top, left bottom, from($button-color), to(darken($button-color, 10%)))
+  border: 0px
+  border-bottom-right-radius: $default-border-radius
+  border-top-right-radius: $default-border-radius
+  -moz-border-radius-bottomright: $default-border-radius
+  -moz-border-radius-topright: $default-border-radius
+  -webkit-border-bottom-right-radius: $default-border-radius
+  -webkit-border-top-right-radius: $default-border-radius
+  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  color: $button-text-color
+  display: inline
+  position: relative
+  left: -4px
+  font: normal 14px / 100% ubuntu, helvetica, arial, sans-serif
+  font-weight: bold
+  height: $search-height + 2px
+  margin: 0px
+  text-shadow: 0px 1px 3px $button-text-shadow
+  width: 4em
+  outline: none
+  &:hover
+    background: lighten($button-color, 10%)
+    background: -moz-linear-gradient(top, lighten($button-color, 10%), $button-color)
+    background: -webkit-gradient(linear, left top, left bottom, from(lighten($button-color, 10%)), to($button-color))
+  &:active
+    background: darken($button-color, 10%)
+    background: -moz-linear-gradient(top, darken($button-color, 10%), $button-color)
+    background: -webkit-gradient(linear, left top, left bottom, from(darken($button-color, 10%)), to($button-color))
+
+#ubuntulogo
+  position: absolute
+  bottom: 40%
+  right: 30px
+  width: 25%
+
+
+//  HELP
+//  ---------------------------------------------------
+
+#help
+  padding-top: 30px
+  padding-left: $search-left
+  color: $ubuntu-text-grey
+  min-height: 100%
+  
+  ul
+    padding-left: 1em
+    li
+      margin: 0.25em 0
+  
+  ul.links
+    list-style: none
+    margin: 0
+    li
+      margin-bottom: 0.5em
+    .description
+      font-size: 80%
+      line-height: 1.2em
+      padding-left: 1em
+  
+  p
+    margin-bottom: 0.5em
+    &:last-child
+      margin-bottom: 0
+    
+  section
+    padding: 2em 0 
+    width: 40%
+    float: left
+    margin-right: 5%
+    min-height: 19em
+    h3
+      margin-bottom: 0.5em
+
+footer
+  font-size: 80%
+  margin-top: 1em
+  padding: 1em $search-left
+  background: $ubuntu-warm-grey
+  
+//  MEDIA
+//  ----------------------------------------------------
+
+@media all and (orientation:portrait)
+
+
+@media all and (orientation:landscape)
+
+
+@media screen and (max-device-width: 480px)
+  // html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+
+
+@media print
+  *
+    background: transparent !important
+    color: #444 !important
+    text-shadow: none !important
+  a
+    color: #444 !important
+    text-decoration: underline
+    &:visited
+      color: #444 !important
+      text-decoration: underline
+    &:after
+      content: " (" attr(href) ")"
+  abbr:after
+    content: " (" attr(title) ")"
+  .ir a:after
+    content: ""
+  pre, blockquote
+    border: 1px solid #999
+    page-break-inside: avoid
+  thead
+    display: table-header-group
+  tr, img
+    page-break-inside: avoid
+  @page
+    margin: 0.5cm
+
+  p, h2, h3
+    orphans: 3
+    widows: 3
+  h2, h3
+    page-break-after: avoid
