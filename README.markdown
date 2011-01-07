@@ -5,7 +5,7 @@ This is simply a replacement homepage for Ubuntu installations. It provides addi
 help, links and search options. It is designed to be beautiful and more friendly to first
 time users, while adding a few neat tricks for experienced users.
 
-![v0.1 Ubuntu Homepage](Ubuntu_homepage_v0.1.png "v0.1 Ubuntu Homepage")
+![v0.1 Ubuntu Homepage](https://github.com/RKelln/Ubuntu-Homepage/tree/master/doc/Ubuntu_homepage_v0.1.png "v0.1 Ubuntu Homepage")
 
 
 Usage
