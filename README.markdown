@@ -78,16 +78,16 @@ images and design are based on:
 
 License
 -------
-Image-A-Day webserver software is released under the [GPL 3](http://www.gnu.org/licenses/gpl.html).
+Ubuntu Homepage software is released under the [GPL 3](http://www.gnu.org/licenses/gpl.html).
 
 Copyright (C) 2011,  Ryan Kelln
 
-Image-A-Day is free software: you can redistribute it and/or modify
+Ubuntu Homepage is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Image-A-Day is distributed in the hope that it will be useful,
+Ubuntu Homepage is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
