@@ -1,27 +1,31 @@
 Ubuntu Homepage with Help
-==========================
+======================
 
 This is simply a replacement homepage for Ubuntu installations. It provides additional
 help, links and search options. It is designed to be beautiful and more friendly to first
 time users, while adding a few neat tricks for experienced users.
 
+![v0.1 Ubuntu hompage][homepage_image]
+
+[homepage_image]: Ubuntu_homepage_v0.1.png "v0.1 Ubuntu Homepage"
+
 
 Usage
-------
+-----
 Copy the `site` directory to the Ubuntu install, then set the browser home page to be the `index.html` file inside of that directory.
 
 The `src` and `config` directories are for development only.
 
 
 Release History
-----------------
+--------------
 See CHANGELOG for details.
 
 * __0.1__: *06 Jan 2011* First commit.
 
 
 Requirements
---------------
+-----------
 The built site can be simply viewed in Firefox or Chrome. It has never been tested on anything else.
 
 To develop or change the site you'll need:
@@ -36,7 +40,7 @@ You can just manually edit the index.html or style.css files for personal use, b
 
 
 Getting Started
-----------------
+--------------
 NOTE: tested on Ubuntu 10.04 only with Firefox 4, 3.6 and Chrome 9
 
 1.  Clone or download from github
@@ -64,7 +68,7 @@ NOTE: tested on Ubuntu 10.04 only with Firefox 4, 3.6 and Chrome 9
 
 
 Thanks
--------
+------
 Thanks to the SocialTech and Linux Education folks in Toronto. The current code,
 images and design are based on:
 
@@ -75,7 +79,7 @@ images and design are based on:
 
 
 License
---------
+-------
 Image-A-Day webserver software is released under the [GPL 3](http://www.gnu.org/licenses/gpl.html).
 
 Copyright (C) 2011,  Ryan Kelln
