@@ -20,7 +20,7 @@ Release History
 See CHANGELOG for details.
 
 * __0.1__: *06 Jan 2011* First commit.
-
+* 0.1.1: *07 Jan 2011* README updated to show screenshot. No changes to page.
 
 Requirements
 -----------
