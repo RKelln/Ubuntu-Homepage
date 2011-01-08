@@ -10,15 +10,16 @@
 
 //  EMBEDDED FONT FAMILIES
 //  ----------------------------------------------------
-@font-face
-  font-family: Ubuntu
-  src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.ttf') format('truetype')
-
-@font-face
-  font-family: Ubuntu
-  src: local('☺'), url('Ubuntu-Bold.woff') format('woff'), url('Ubuntu-Bold.ttf') format('truetype')
-  font-weight: bold
-
+/*
+ *@font-face
+ * font-family: Ubuntu
+ * src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.ttf') format('truetype')
+ *
+ *@font-face
+ *  font-family: Ubuntu
+ *  src: local('☺'), url('Ubuntu-Bold.woff') format('woff'), url('Ubuntu-Bold.ttf') format('truetype')
+ *  font-weight: bold
+ */
 //  SASS variables
 //  ----------------------------------------------------
 $ubuntu-orange: #DD4814
@@ -131,36 +132,13 @@ body, select, input, textarea
 body
   font-size: 16px
   line-height: 1.5em
-  font-family: 'Ubuntu', 'Arimo', 'Droid Sans', sans-serif
+  font-family: sans-serif
 
 h1, h2, h3, h4, h5, h6
   font-weight: bold
 
 html
   overflow-y: scroll
-
-a
-  text-decoration: none
-  color: $link-color
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
-  // do not wrap links
-  white-space: nowrap
-  outline: none
-  position: relative
-  top: 0px
-  left: 0px
-  &:active
-    color:  $link-color !important
-    text-shadow: none
-    position: relative
-    top: 1px
-    left: 1px
-    border-bottom: 1px solid $ubuntu-cool-grey !important
-  &:visited
-    color: rgba($link-visited-color, 0.1)
-  &:hover, &:focus
-    color: $link-hover-color
-    border-bottom: 1px dashed $ubuntu-cool-grey
     
 ul
   margin-left: 1.8em
@@ -306,7 +284,13 @@ button
 
 //  FONTS
 //  -----------------------------------------------------
+body
+  font-family: 'Ubuntu', 'Arimo', 'Droid Sans', Arial, sans-serif
 
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  font-family: 'Ubuntu', 'Arimo', 'Droid Sans', Arial, sans-serif
+  
 h1
   font-size: 150%
 h2
@@ -494,7 +478,30 @@ input.go
   padding-left: $search-left
   color: $ubuntu-text-grey
   min-height: 100%
-  
+
+  a
+    text-decoration: none
+    color: $link-color
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
+    // do not wrap links
+    white-space: nowrap
+    outline: none
+    position: relative
+    top: 0px
+    left: 0px
+    &:active
+      color:  $link-color !important
+      text-shadow: none
+      position: relative
+      top: 1px
+      left: 1px
+      border-bottom: 1px solid $ubuntu-cool-grey !important
+    &:visited
+      color: rgba($link-visited-color, 0.1)
+    &:hover, &:focus
+      color: $link-hover-color
+      border-bottom: 1px dashed $ubuntu-cool-grey
+
   ul
     padding-left: 1em
     li
@@ -546,13 +553,13 @@ footer
 @media print
   *
     background: transparent !important
-    color: #444 !important
+    color: $text-color !important
     text-shadow: none !important
   a
-    color: #444 !important
+    color: $text-color !important
     text-decoration: underline
     &:visited
-      color: #444 !important
+      color: $text-color !important
       text-decoration: underline
     &:after
       content: " (" attr(href) ")"

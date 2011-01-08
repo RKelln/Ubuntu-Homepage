@@ -1,12 +1,14 @@
 Release History
 =============
 
-* in git on master: 08 Jan 2011
+* in git on master: 09 Jan 2011
     * added how to support Ubuntu text
     * fancy <a>
     * fancy <em>
     * fixed link css order
     * remove help icon (it is present in 10.04 only)
+    * switch back to Google hosted Ubuntu font (strange regression with local fonts)
+    * add Chrome help links
 
 * 0.1.1: *07 Jan 2011* README updated to show screenshot.
 

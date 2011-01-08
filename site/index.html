@@ -5,7 +5,7 @@
     <meta content='Ubuntu search and help homepage' name='description' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='favicon.ico' rel='shortcut icon' type='image/x-icon' />
-    <!-- /%link(href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold' rel='stylesheet' type='text/css') -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold' rel='stylesheet' type='text/css' />
     <link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css"/>
   </head>
   <body>
@@ -108,8 +108,12 @@
                 <p class='description'>"How to" videos</p>
               </li>
               <li class='firefox-only' style='display:none'>
-                <a href="http://support.mozilla.com/">Firefox support</a>
-                <p class='description'>If you're having problems with your browser, this is great place to start</p>
+                <a href="http://support.mozilla.com/">Firefox web browser support</a>
+                <p class='description'>If you have questions or problems with this browser</p>
+              </li>
+              <li class='chrome-only' style='display:none'>
+                <a href="http://www.google.com/support/chrome/">Chrome web browser support</a>
+                <p class='description'>If you have questions or problems with this browser</p>
               </li>
             </ul>
           </section>
@@ -213,6 +217,9 @@
           var userAgent = navigator.userAgent.toLowerCase();
           if (userAgent.indexOf('firefox') != -1) {
             $(".firefox-only").show();
+          }
+          if (userAgent.indexOf('chrome') != -1) {
+            $(".chrome-only").show();
           }
         });
       //]]>

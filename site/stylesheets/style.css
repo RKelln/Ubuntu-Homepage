@@ -1,15 +1,13 @@
-@font-face {
-  font-family: Ubuntu;
-  src: local("☺"), url("Ubuntu-Regular.woff") format("woff"), url("Ubuntu-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: Ubuntu;
-  src: local("☺"), url("Ubuntu-Bold.woff") format("woff"), url("Ubuntu-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-/* line 57 */
+/*@font-face
+ * font-family: Ubuntu
+ * src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.ttf') format('truetype')
+ *
+ *@font-face
+ *  font-family: Ubuntu
+ *  src: local('☺'), url('Ubuntu-Bold.woff') format('woff'), url('Ubuntu-Bold.ttf') format('truetype')
+ *  font-weight: bold
+ */
+/* line 58 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -20,34 +18,34 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   background: transparent;
 }
 
-/* line 66 */
+/* line 67 */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 69 */
+/* line 70 */
 nav ul {
   list-style: none;
 }
 
-/* line 72 */
+/* line 73 */
 blockquote, q {
   quotes: none;
 }
 
-/* line 76 */
+/* line 77 */
 blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 81 */
+/* line 82 */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 85 */
+/* line 86 */
 a {
   margin: 0;
   padding: 0;
@@ -56,14 +54,14 @@ a {
   background: transparent;
 }
 
-/* line 92 */
+/* line 93 */
 ins {
   background-color: rgba(255, 255, 153, 0.25);
   color: #333333;
   text-decoration: none;
 }
 
-/* line 97 */
+/* line 98 */
 mark {
   background-color: rgba(255, 255, 153, 0.25);
   color: #333333;
@@ -71,24 +69,24 @@ mark {
   font-weight: bold;
 }
 
-/* line 103 */
+/* line 104 */
 del {
   text-decoration: line-through;
 }
 
-/* line 106 */
+/* line 107 */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 110 */
+/* line 111 */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 114 */
+/* line 115 */
 hr {
   display: block;
   height: 1px;
@@ -98,116 +96,86 @@ hr {
   padding: 0;
 }
 
-/* line 122 */
+/* line 123 */
 input, select {
   vertical-align: middle;
 }
 
-/* line 125 */
+/* line 126 */
 pre, code, kbd, samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 128 */
+/* line 129 */
 body, select, input, textarea {
   color: #333333;
 }
 
-/* line 131 */
+/* line 132 */
 body {
   font-size: 16px;
   line-height: 1.5em;
-  font-family: "Ubuntu", "Arimo", "Droid Sans", sans-serif;
+  font-family: sans-serif;
 }
 
-/* line 136 */
+/* line 137 */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 139 */
+/* line 140 */
 html {
   overflow-y: scroll;
 }
 
-/* line 142 */
-a {
-  text-decoration: none;
-  color: #5e2750;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
-  white-space: nowrap;
-  outline: none;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-/* line 152 */
-a:active {
-  color: #5e2750 !important;
-  text-shadow: none;
-  position: relative;
-  top: 1px;
-  left: 1px;
-  border-bottom: 1px solid #333333 !important;
-}
-/* line 159 */
-a:visited {
-  color: rgba(44, 0, 30, 0.1);
-}
-/* line 161 */
-a:hover, a:focus {
-  color: #77216f;
-  border-bottom: 1px dashed #333333;
-}
-
-/* line 165 */
+/* line 143 */
 ul {
   margin-left: 1.8em;
 }
 
-/* line 168 */
+/* line 146 */
 ol {
   margin-left: 1.8em;
   list-style-type: decimal;
 }
 
-/* line 173 */
+/* line 151 */
 nav ul, nav li {
   margin: 0;
 }
 
-/* line 176 */
+/* line 154 */
 small {
   font-size: 85%;
 }
 
-/* line 179 */
+/* line 157 */
 strong, th {
   font-weight: bold;
 }
 
-/* line 182 */
+/* line 160 */
 td {
   vertical-align: top;
 }
-/* line 184 */
+/* line 162 */
 td img {
   vertical-align: top;
 }
 
-/* line 187 */
+/* line 165 */
 sub {
   vertical-align: sub;
   font-size: smaller;
 }
 
-/* line 191 */
+/* line 169 */
 sup {
   vertical-align: super;
   font-size: smaller;
 }
 
-/* line 195 */
+/* line 173 */
 pre {
   padding: 15px;
   white-space: pre;
@@ -216,57 +184,57 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 202 */
+/* line 180 */
 textarea {
   overflow: auto;
 }
 
-/* line 205 */
+/* line 183 */
 .ie6 legend, .ie7 legend {
   margin-left: -7px;
 }
 
-/* line 209 */
+/* line 187 */
 input[type="radio"] {
   vertical-align: text-bottom;
 }
-/* line 211 */
+/* line 189 */
 input[type="checkbox"] {
   vertical-align: bottom;
 }
 
-/* line 214 */
+/* line 192 */
 .ie7 input[type="checkbox"] {
   vertical-align: baseline;
 }
 
-/* line 217 */
+/* line 195 */
 .ie6 input {
   vertical-align: text-bottom;
 }
 
-/* line 220 */
+/* line 198 */
 label {
   cursor: pointer;
 }
 
-/* line 224 */
+/* line 202 */
 input[type=button], input[type=submit] {
   cursor: pointer;
 }
 
-/* line 227 */
+/* line 205 */
 button {
   cursor: pointer;
   margin: 0;
 }
 
-/* line 231 */
+/* line 209 */
 input, select, textarea {
   margin: 0;
 }
 
-/* line 236 */
+/* line 214 */
 input:invalid, textarea:invalid {
   border-radius: 1px;
   -moz-box-shadow: 0px 0px 5px red;
@@ -274,42 +242,42 @@ input:invalid, textarea:invalid {
   box-shadow: 0px 0px 5px red;
 }
 
-/* line 248 */
+/* line 226 */
 ::-moz-selection {
   color: white;
   background: #5e2750;
   text-shadow: none;
 }
 
-/* line 253 */
+/* line 231 */
 ::selection {
   color: white;
   background: #5e2750;
   text-shadow: none;
 }
 
-/* line 259 */
+/* line 237 */
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 262 */
+/* line 240 */
 a:link {
   -webkit-tap-highlight-color: #ff5e99;
 }
 
-/* line 265 */
+/* line 243 */
 button {
   width: auto;
   overflow: visible;
 }
 
-/* line 269 */
+/* line 247 */
 .ie7 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 272 */
+/* line 250 */
 .ir {
   display: block;
   text-indent: -999em;
@@ -319,36 +287,36 @@ button {
   direction: ltr;
 }
 
-/* line 280 */
+/* line 258 */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 284 */
+/* line 262 */
 .visuallyhidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 289 */
+/* line 267 */
 .invisible {
   visibility: hidden;
 }
 
-/* line 292 */
+/* line 270 */
 .clearfix {
   zoom: 1;
 }
-/* line 293 */
+/* line 271 */
 .clearfix:before {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden;
 }
-/* line 298 */
+/* line 276 */
 .clearfix:after {
   content: "\0020";
   display: block;
@@ -357,22 +325,33 @@ button {
   clear: both;
 }
 
-/* line 310 */
+/* line 287 */
+body {
+  font-family: "Ubuntu", "Arimo", "Droid Sans", Arial, sans-serif;
+}
+
+/* line 290 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: "Ubuntu", "Arimo", "Droid Sans", Arial, sans-serif;
+}
+
+/* line 294 */
 h1 {
   font-size: 150%;
 }
 
-/* line 312 */
+/* line 296 */
 h2 {
   font-size: 125%;
 }
 
-/* line 314 */
+/* line 298 */
 h3 {
   font-size: 110%;
 }
 
-/* line 316 */
+/* line 300 */
 em {
   font-style: normal;
   white-space: nowrap;
@@ -385,30 +364,30 @@ em {
   text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.8);
 }
 
-/* line 328 */
+/* line 312 */
 strong {
   text-weight: bold;
 }
 
-/* line 334 */
+/* line 318 */
 .inline {
   display: inline;
 }
 
-/* line 337 */
+/* line 321 */
 .icon {
   width: 16px;
   height: 16px;
 }
 
-/* line 344 */
+/* line 328 */
 #engines {
   width: 700px;
   height: 80px;
   padding-top: 20px;
   position: relative;
 }
-/* line 349 */
+/* line 333 */
 #engines a {
   display: block;
   width: 225px;
@@ -419,19 +398,19 @@ strong {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
 }
-/* line 358 */
+/* line 342 */
 #engines a img {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-/* line 363 */
+/* line 347 */
 #input {
   margin-top: 30px;
 }
 
-/* line 366 */
+/* line 350 */
 .ubuntu-button, #lang, #method a {
   text-align: center;
   cursor: pointer;
@@ -442,22 +421,22 @@ strong {
   text-decoration: none !important;
   outline: none;
 }
-/* line 375 */
+/* line 359 */
 .ubuntu-button.active, .active#lang, #method a.active, .ubuntu-button.active:hover, .active#lang:hover, #method a.active:hover {
   background: #dd4814;
   color: white;
 }
-/* line 378 */
+/* line 362 */
 .ubuntu-button:hover, #lang:hover, #method a:hover {
   color: white;
   background: rgba(174, 167, 159, 0.2);
 }
-/* line 381 */
+/* line 365 */
 .ubuntu-button:active, #lang:active, #method a:active {
   background: #ae3910;
 }
 
-/* line 384 */
+/* line 368 */
 #lang {
   font-size: 13px;
   font-weight: bold;
@@ -468,19 +447,19 @@ strong {
   margin-top: 1px;
 }
 
-/* line 394 */
+/* line 378 */
 #method {
   text-align: center;
   margin: 30px 0 30px 150px;
   width: 400px;
 }
-/* line 398 */
+/* line 382 */
 #method a {
   padding: 3px 6px;
   margin: 0 2px;
 }
 
-/* line 403 */
+/* line 387 */
 #search {
   position: relative;
   margin: 0px;
@@ -495,7 +474,7 @@ strong {
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* line 418 */
+/* line 402 */
 input.search {
   background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5));
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.5)), to(rgba(34, 11, 40, 0.5)));
@@ -522,13 +501,13 @@ input.search {
   text-shadow: 1px 1px 3px rgba(1, 0, 2, 0.5);
 }
 
-/* line 444 */
+/* line 428 */
 input.search:hover, input.search:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.7)), to(rgba(34, 11, 40, 0.7)));
   background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7));
 }
 
-/* line 448 */
+/* line 432 */
 input.go {
   background: #dd4814;
   background: -moz-linear-gradient(top, #dd4814, #ae3910);
@@ -555,20 +534,20 @@ input.go {
   width: 4em;
   outline: none;
 }
-/* line 473 */
+/* line 457 */
 input.go:hover {
   background: #ed6637;
   background: -moz-linear-gradient(top, #ed6637, #dd4814);
   background: -webkit-gradient(linear, left top, left bottom, from(#ed6637), to(#dd4814));
 }
-/* line 477 */
+/* line 461 */
 input.go:active {
   background: #ae3910;
   background: -moz-linear-gradient(top, #ae3910, #dd4814);
   background: -webkit-gradient(linear, left top, left bottom, from(#ae3910), to(#dd4814));
 }
 
-/* line 482 */
+/* line 466 */
 #ubuntulogo {
   position: absolute;
   bottom: 40%;
@@ -576,45 +555,74 @@ input.go:active {
   width: 25%;
 }
 
-/* line 492 */
+/* line 476 */
 #help {
   padding-top: 30px;
   padding-left: 120px;
   color: #333333;
   min-height: 100%;
 }
-/* line 498 */
+/* line 482 */
+#help a {
+  text-decoration: none;
+  color: #5e2750;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+/* line 492 */
+#help a:active {
+  color: #5e2750 !important;
+  text-shadow: none;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border-bottom: 1px solid #333333 !important;
+}
+/* line 499 */
+#help a:visited {
+  color: rgba(44, 0, 30, 0.1);
+}
+/* line 501 */
+#help a:hover, #help a:focus {
+  color: #77216f;
+  border-bottom: 1px dashed #333333;
+}
+/* line 505 */
 #help ul {
   padding-left: 1em;
 }
-/* line 500 */
+/* line 507 */
 #help ul li {
   margin: 0.25em 0;
 }
-/* line 503 */
+/* line 510 */
 #help ul.links {
   list-style: none;
   margin: 0;
 }
-/* line 506 */
+/* line 513 */
 #help ul.links li {
   margin-bottom: 0.5em;
 }
-/* line 508 */
+/* line 515 */
 #help ul.links .description {
   font-size: 80%;
   line-height: 1.2em;
   padding-left: 1em;
 }
-/* line 513 */
+/* line 520 */
 #help p {
   margin-bottom: 0.5em;
 }
-/* line 515 */
+/* line 522 */
 #help p:last-child {
   margin-bottom: 0;
 }
-/* line 518 */
+/* line 525 */
 #help section {
   padding: 2em 0;
   width: 40%;
@@ -622,12 +630,12 @@ input.go:active {
   margin-right: 5%;
   min-height: 19em;
 }
-/* line 524 */
+/* line 531 */
 #help section h3 {
   margin-bottom: 0.5em;
 }
 
-/* line 527 */
+/* line 534 */
 footer {
   font-size: 80%;
   margin-top: 1em;
@@ -639,50 +647,50 @@ footer {
 @media all and (orientation:landscape);
 @media screen and (max-device-width: 480px) {}
 @media print {
-  /* line 547 */
+  /* line 554 */
   * {
     background: transparent !important;
-    color: #444444 !important;
+    color: #333333 !important;
     text-shadow: none !important;
   }
 
-  /* line 551 */
+  /* line 558 */
   a {
-    color: #444444 !important;
+    color: #333333 !important;
     text-decoration: underline;
   }
-  /* line 554 */
+  /* line 561 */
   a:visited {
-    color: #444444 !important;
+    color: #333333 !important;
     text-decoration: underline;
   }
-  /* line 557 */
+  /* line 564 */
   a:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 559 */
+  /* line 566 */
   abbr:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 561 */
+  /* line 568 */
   .ir a:after {
     content: "";
   }
 
-  /* line 563 */
+  /* line 570 */
   pre, blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 566 */
+  /* line 573 */
   thead {
     display: table-header-group;
   }
 
-  /* line 568 */
+  /* line 575 */
   tr, img {
     page-break-inside: avoid;
   }
@@ -691,13 +699,13 @@ footer {
     margin: 0.5cm;
 }
 
-  /* line 573 */
+  /* line 580 */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 576 */
+  /* line 583 */
   h2, h3 {
     page-break-after: avoid;
   }

@@ -83,8 +83,12 @@
             %p.description "How to" videos
             
           %li.firefox-only(style="display:none")
-            = link "Firefox support", "http://support.mozilla.com/"
-            %p.description If you're having problems with your browser, this is great place to start
+            = link "Firefox web browser support", "http://support.mozilla.com/"
+            %p.description If you have questions or problems with this browser
+          
+          %li.chrome-only(style="display:none")
+            = link "Chrome web browser support", "http://www.google.com/support/chrome/"
+            %p.description If you have questions or problems with this browser
             
       %section#news
         %h3 News and Community
@@ -167,5 +171,8 @@
     var userAgent = navigator.userAgent.toLowerCase();
     if (userAgent.indexOf('firefox') != -1) {
       $(".firefox-only").show();
+    }
+    if (userAgent.indexOf('chrome') != -1) {
+      $(".chrome-only").show();
     }
   });
