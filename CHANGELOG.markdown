@@ -1,7 +1,7 @@
 Release History
 =============
 
-* in git on master: 09 Jan 2011
+* __0.2: *17 Jan 2011* Ready for trial installs__
     * added how to support Ubuntu text
     * fancy <a>
     * fancy <em>
@@ -9,6 +9,7 @@ Release History
     * remove help icon (it is present in 10.04 only)
     * switch back to Google hosted Ubuntu font (strange regression with local fonts)
     * add Chrome help links
+    * Fixes for github links and names. Thanks [BeSlayed](http://github.com/BeSlayed).
 
 * 0.1.1: *07 Jan 2011* README updated to show screenshot.
 

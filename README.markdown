@@ -20,7 +20,7 @@ Release History
 See CHANGELOG for details.
 
 * __0.1__: *06 Jan 2011* First commit.
-* 0.1.1: *07 Jan 2011* README updated to show screenshot. No changes to page.
+* __0.2__: *17 Jan 2011* Ready for trial installs.
 
 Requirements
 -----------
@@ -43,7 +43,7 @@ NOTE: tested on Ubuntu 10.04 only with Firefox 4, 3.6 and Chrome 9
 
 1.  Clone or download from github
 
-2.  Change to the ubuntuhomepage directory
+2.  Change to the Ubuntu-Homepage directory
 
 3.  Preview with StaticMatic
 
