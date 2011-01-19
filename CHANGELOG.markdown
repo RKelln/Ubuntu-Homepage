@@ -1,6 +1,13 @@
 Release History
 =============
 
+* master on github
+    * easier to modify default language order
+    * use HTML 5 localStorage for remembering search engine and language preference
+    * add News search to Google
+    * added help title text to language buttons
+    * Improved Getting Started text
+
 * __0.2: *17 Jan 2011* Ready for trial installs__
     * added how to support Ubuntu text
     * fancy <a>

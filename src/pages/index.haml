@@ -4,20 +4,19 @@
       %object#ubuntulogo(data="images/ubuntu_white-orange_hex.svg" type="image/svg+xml")
       #engines
       #input
-        %form#form(onsubmit="return doSearch()")
-          %a#lang(onclick="nextLanguage()" style="display:none;")
+        %form#form(onsubmit="return doSearch();")
+          %a#lang(onclick="nextLanguage();" style="display:none;" title="Set the search language. Click to change.")
           %input#i.search(type="text" placeholder="Search")
           %input.go(type="submit" value="Go")          
         %p#method
         
     %article#help
-      //%h2 Help, Support, and Community
       %section#getting-started
         %h3 Getting Started
         %p
           Welcome to 
           = link "Ubuntu!", "http://ubuntu.com/"
-          It is easy to get started. Simply type in a search to start searching with Google.
+          To start exploring the Internet, type what you're looking for in the dark box above.
         %p
           To search for help with Ubuntu just add "Ubuntu" or "help Ubuntu" to your search.
           You may need to include the 

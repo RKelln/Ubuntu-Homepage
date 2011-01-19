@@ -37,8 +37,11 @@ $(function()
 	//});
 
 	// Set up first engine
-
-	build(firstProp(eng), false);
+	var engine = localStorage["Ubuntu-Homepage.current.engine"];
+  if (!eng.hasOwnProperty(engine)) {
+    engine = firstProp(eng);
+  }
+	build(engine, false);
 	
 	// set focus
 	setFocus(true);
@@ -163,6 +166,7 @@ function build(e, animate)
 	var methodFade = (animate) ? fadeDur : 0;
 
 	current.engine = e;		// Just the engine's ID for reference
+	localStorage["Ubuntu-Homepage.current.engine"] = e; // store current engine locally
 	e = eng[e];				// Engine object
 
 	//$("#title").html(titlePrefix+e.pageTitle);
@@ -174,7 +178,13 @@ function build(e, animate)
 	$("#"+current.engine+"_logo").addClass("active").animate({"opacity": 1}, fadeDur);
 	$("#engines a:not(.active)").animate({"opacity": op}, fadeDur);
 
-	if (typeof e.languages == "object") setLang(firstProp(e.languages));
+	if (typeof e.languages == "object") {
+	  var lang = localStorage["Ubuntu-Homepage.current.language"];
+    if (!e.languages.hasOwnProperty(lang)) {
+      lang = firstProp(e.languages);
+    }
+	  setLang(lang);
+	}
 	else $("#lang").fadeOut(fadeDur);
 
 	setTimeout(function()
@@ -200,6 +210,7 @@ function setPlace(place, focus)
 function setLang(language, focus)
 {
 	current.language = language;
+  localStorage["Ubuntu-Homepage.current.language"] = language;
 
 	$("#lang").fadeIn(fadeDur).html(language);
 	setFocus(focus);

@@ -6,7 +6,15 @@
  *     might be nice to replace with something that talks to Google
  *     et al directly and not through go.infinse.com
  */
- 
+
+var default_languages = {
+	'EN': 'en',
+	'DE': 'de',
+	'FR': 'fr',
+	'IT': 'it',
+	'ES': 'es'
+}
+
 /*	GOOGLE
 	----------------------------------------------------- */
 
@@ -14,10 +22,12 @@ eng.google = {
 	pageTitle: "Google",
 	logo: "google-white.png",
 	places: {
-		'Web'    : ["http://www.google.com/search?q=%query%&hl=en",		false],
-		'Images' : ["http://images.google.com/images?q=%query%&hl=en",	false],
-		'Maps'   : ["http://maps.google.com/maps?q=%query%",			false]
-	}
+		'Web'    : ["http://www.google.com/search?q=%query%&hl=%lang%", false],
+		'Images' : ["http://images.google.com/images?q=%query%&hl=%lang%", false],
+		'Maps'   : ["http://maps.google.com/maps?q=%query%&hl=%lang%", false],
+		'News'   : ["http://news.google.com/news/search?q=%query%", false]
+	},
+	languages: default_languages
 };
 
 
@@ -31,13 +41,7 @@ eng.wikipedia = {
 		'Go to Article' : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&go=Go", false],
 		'Search'        : ["http://%lang%.wikipedia.org/wiki/Special:Search?search=%query%&fulltext=Search", false],
 	},
-	languages: {
-		'EN': 'en',
-		'DE': 'de',
-		'FR': 'fr',
-		'IT': 'it',
-		'ES': 'es'
-	}
+	languages: default_languages
 };
 
 
@@ -49,7 +53,7 @@ eng.youtube = {
 	logo: "youtube.png",
 	places: {
 		'Videos' : ["http://www.youtube.com/results?search_query=%query%", false]
-	},
+	}
 };
 
 
