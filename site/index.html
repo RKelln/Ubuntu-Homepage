@@ -15,8 +15,8 @@
           <object data='images/ubuntu_white-orange_hex.svg' id='ubuntulogo' type='image/svg+xml'></object>
           <div id='engines'></div>
           <div id='input'>
-            <form id='form' onsubmit='return doSearch()'>
-              <a id='lang' onclick='nextLanguage()' style='display:none;'></a>
+            <form id='form' onsubmit='return doSearch();'>
+              <a id='lang' onclick='nextLanguage();' style='display:none;' title='Set the search language. Click to change.'></a>
               <input class='search' id='i' placeholder='Search' type='text' />
               <input class='go' type='submit' value='Go' />
             </form>
@@ -24,13 +24,12 @@
           </div>
         </article>
         <article id='help'>
-          <!-- /%h2 Help, Support, and Community -->
           <section id='getting-started'>
             <h3>Getting Started</h3>
             <p>
               Welcome to
               <a href="http://ubuntu.com/">Ubuntu!</a>
-              It is easy to get started. Simply type in a search to start searching with Google.
+              To start exploring the Internet, type what you're looking for in the dark box above.
             </p>
             <p>
               To search for help with Ubuntu just add "Ubuntu" or "help Ubuntu" to your search.
