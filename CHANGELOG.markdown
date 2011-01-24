@@ -7,6 +7,9 @@ Release History
     * add News search to Google
     * added help title text to language buttons
     * Improved Getting Started text
+    * first tests on i18n
+      * hacked in R18n support
+      * EN, DE, PT translations mostly complete
 
 * __0.2: *17 Jan 2011* Ready for trial installs__
     * added how to support Ubuntu text
