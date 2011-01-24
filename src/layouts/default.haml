@@ -1,8 +1,12 @@
+- t = R18n.get
+- t.reload!
 !!! 5
 %html
   %head
-    %title Ubuntu homepage
-    %meta(name="description" content="Ubuntu search and help homepage")
+    %title= t.meta.title
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    %meta(name="description" content="#{t.meta.description}")
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
     %link(href='http://fonts.googleapis.com/css?family=Ubuntu:regular,bold' rel='stylesheet' type='text/css')

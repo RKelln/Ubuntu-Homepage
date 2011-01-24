@@ -276,10 +276,3 @@ function nextLanguage()
 	setLang(findNext(eng[current.engine].languages, current.language), true);
 }
 
-
-
-
-
-
-
-

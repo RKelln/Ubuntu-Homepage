@@ -238,7 +238,7 @@ input:invalid, textarea:invalid
     background-color: #f0dddd
 
 a:link
-  -webkit-tap-highlight-color: #FF5E99
+  -webkit-tap-highlight-color: $ubuntu-orange
 
 button
   width: auto
@@ -311,6 +311,30 @@ em
 
 strong
   text-weight: bold
+
+#help, footer
+  a
+    text-decoration: none
+    color: $link-color
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
+    // do not wrap links
+    white-space: nowrap
+    outline: none
+    position: relative
+    top: 0px
+    left: 0px
+    &:active
+      color:  $link-color !important
+      text-shadow: none
+      position: relative
+      top: 1px
+      left: 1px
+      border-bottom: 1px solid $ubuntu-cool-grey !important
+    &:visited
+      color: rgba($link-visited-color, 0.1)
+    &:hover, &:focus
+      color: $link-hover-color
+      border-bottom: 1px dashed $ubuntu-cool-grey
 
 //  HELPER CLASSES
 //  -----------------------------------------------------
@@ -478,29 +502,6 @@ input.go
   padding-left: $search-left
   color: $ubuntu-text-grey
   min-height: 100%
-
-  a
-    text-decoration: none
-    color: $link-color
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
-    // do not wrap links
-    white-space: nowrap
-    outline: none
-    position: relative
-    top: 0px
-    left: 0px
-    &:active
-      color:  $link-color !important
-      text-shadow: none
-      position: relative
-      top: 1px
-      left: 1px
-      border-bottom: 1px solid $ubuntu-cool-grey !important
-    &:visited
-      color: rgba($link-visited-color, 0.1)
-    &:hover, &:focus
-      color: $link-hover-color
-      border-bottom: 1px dashed $ubuntu-cool-grey
 
   ul
     padding-left: 1em
