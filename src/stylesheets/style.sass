@@ -48,7 +48,17 @@ $search-left: 120px
 $search-top: 100px
 $search-font-size: 16px
 
+// compass defaults
 $default-border-radius: 3px
+$default-transition-duration: 0.3s
+
+//  COMPASS imports
+//  ----------------------------------------------------
+//  Note: be sure to set defaults above this
+
+@import "compass"
+@import "compass/css3"
+
 
 //  RESET and DEFAULTS
 //  -----------------------------------------------------
@@ -302,21 +312,18 @@ em
   // do not wrap
   white-space: nowrap
   padding: 2px 4px
-  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.18), rgba(34, 11, 40, 0.15))
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.18)), to(rgba(34, 11, 40, 0.15)))
-  border-radius: $default-border-radius
-  -moz-border-radius: $default-border-radius
-  -webkit-border-radius: $default-border-radius
-  text-shadow: 0px 0px 2px rgba($ubuntu-white, 0.8)
+  +linear-gradient(color-stops(rgba(1, 0, 2, 0.18),rgba(34, 11, 40, 0.15)))
+  +border-radius
+  +text-shadow(rgba($ubuntu-white, 0.8), 0px, 0px, 2px)
 
 strong
   text-weight: bold
 
-#help, footer
+#help, footer, #languages
   a
     text-decoration: none
     color: $link-color
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
+    +text-shadow( rgba(0, 0, 0, 0.33), 1px, 1px, 1px)
     // do not wrap links
     white-space: nowrap
     outline: none
@@ -331,7 +338,7 @@ strong
       left: 1px
       border-bottom: 1px solid $ubuntu-cool-grey !important
     &:visited
-      color: rgba($link-visited-color, 0.1)
+      color: $link-visited-color
     &:hover, &:focus
       color: $link-hover-color
       border-bottom: 1px dashed $ubuntu-cool-grey
@@ -361,8 +368,7 @@ strong
     cursor: pointer
     opacity: 0.0
     position: absolute
-    -webkit-border-radius: $default-border-radius
-    -moz-border-radius: $default-border-radius
+    +border-radius
     img
       display: block
       height: 100%
@@ -372,12 +378,12 @@ strong
   margin-top: $search-height
   
 .ubuntu-button
+  +transition
   text-align: center
   cursor: pointer
   color: rgba($button-text-color, 0.8)
   background: rgba($ubuntu-warm-grey, 0.1)
-  -webkit-border-radius: $default-border-radius
-  -moz-border-radius: $default-border-radius
+  +border-radius
   text-decoration: none !important
   outline: none
   &.active, &.active:hover
@@ -412,7 +418,6 @@ strong
   position: relative
   margin: 0px
   padding: 0px
-  //padding-top: 30px
   background: -moz-radial-gradient(0% 0%, circle farthest-corner, $ubuntu-light-aubergine 0%, $ubuntu-dark-aubergine 100%)
   background: -webkit-gradient(radial, 100 100, 1, 100 100, 2000, from($ubuntu-light-aubergine), to($ubuntu-dark-aubergine))
   width: 100%
@@ -424,18 +429,11 @@ strong
   -webkit-box-shadow: 0px 3px 3px rgba(0,0,0, 0.5)
 
 input.search
-  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5))
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.5)), to(rgba(34, 11, 40, 0.5)))  
+  background: transparent
+  +linear-gradient(color-stops(rgba(1, 0, 2, 0.5), rgba(34, 11, 40, 0.5)), top)
   border: solid 0px #000
-  border-bottom-left-radius: $default-border-radius
-  border-top-left-radius: $default-border-radius
-  -moz-border-radius-bottomleft: $default-border-radius
-  -moz-border-radius-topleft: $default-border-radius
-  -webkit-border-bottom-left-radius: $default-border-radius
-  -webkit-border-top-left-radius: $default-border-radius
-  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
-  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
-  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
+  +border-left-radius
+  +box-shadow(rgba(238, 215, 244, 0.1), 0px, 1px, 0px)
   color: rgba($button-text-color, 0.8)
   display: inline
   font: normal 16px / 100% ubuntu, helvetica, arial, sans-serif
@@ -450,23 +448,16 @@ input.search
   
 
 input.search:hover, input.search:focus
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 0, 2, 0.7)), to(rgba(34, 11, 40, 0.7)))
-  background: -moz-linear-gradient(top, rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7))
+  +linear-gradient(color-stops(rgba(1, 0, 2, 0.7), rgba(34, 11, 40, 0.7)), top)
 
 input.go
   background: $button-color
-  background: -moz-linear-gradient(top, $button-color, darken($button-color, 10%))
-  background: -webkit-gradient(linear, left top, left bottom, from($button-color), to(darken($button-color, 10%)))
+  +linear-gradient(color-stops($button-color, darken($button-color, 10%)))
+  +border-right-radius
+  +box-shadow(rgba(238, 215, 244, 0.1), 0px, 1px, 0px)
+  +transition
+  +text-shadow($button-text-shadow, 0px, 1px, 3px)
   border: 0px
-  border-bottom-right-radius: $default-border-radius
-  border-top-right-radius: $default-border-radius
-  -moz-border-radius-bottomright: $default-border-radius
-  -moz-border-radius-topright: $default-border-radius
-  -webkit-border-bottom-right-radius: $default-border-radius
-  -webkit-border-top-right-radius: $default-border-radius
-  box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
-  -moz-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
-  -webkit-box-shadow: 0px 1px 0px rgba(238, 215, 244, 0.1)
   color: $button-text-color
   display: inline
   position: relative
@@ -475,17 +466,14 @@ input.go
   font-weight: bold
   height: $search-height + 2px
   margin: 0px
-  text-shadow: 0px 1px 3px $button-text-shadow
   width: 4em
   outline: none
+  &:active, &:active:hover
+    background: darken($button-color, 10%)
+    +linear-gradient(color-stops(darken($button-color, 10%), $button-color))
   &:hover
     background: lighten($button-color, 10%)
-    background: -moz-linear-gradient(top, lighten($button-color, 10%), $button-color)
-    background: -webkit-gradient(linear, left top, left bottom, from(lighten($button-color, 10%)), to($button-color))
-  &:active
-    background: darken($button-color, 10%)
-    background: -moz-linear-gradient(top, darken($button-color, 10%), $button-color)
-    background: -webkit-gradient(linear, left top, left bottom, from(darken($button-color, 10%)), to($button-color))
+    +linear-gradient(color-stops(lighten($button-color, 10%), $button-color))
 
 #ubuntulogo
   position: absolute
@@ -537,6 +525,11 @@ footer
   margin-top: 1em
   padding: 1em $search-left
   background: $ubuntu-warm-grey
+
+#languages
+  +horizontal-list
+  font-size: 80%
+  padding: 0.5em $search-left
   
 //  MEDIA
 //  ----------------------------------------------------

@@ -190,7 +190,14 @@ function build(e, animate)
 	setTimeout(function()
 	{
 		$("#method").html("");
-		for (place in e.places) $("#method").append("<a onclick='setPlace(this, true)'>"+place+"</a>");
+		for (place in e.places) {
+		  // look up translation if it exists
+		  if (js_translations !== "undefined" && js_translations[place]) {
+		    place = js_translations[place];
+		  }
+		  $("#method").append("<a onclick='setPlace(this, true)'>"+place+"</a>");
+		  
+		}
 
 		setPlace("#method a:first");
 

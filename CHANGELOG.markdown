@@ -10,6 +10,10 @@ Release History
     * first tests on i18n
       * hacked in R18n support
       * EN, DE, PT translations mostly complete
+      * hacked in translations support for js text
+      * very basic language switcher
+    * added fancy css transitions
+    * use compass mixins in sass
 
 * __0.2: *17 Jan 2011* Ready for trial installs__
     * added how to support Ubuntu text

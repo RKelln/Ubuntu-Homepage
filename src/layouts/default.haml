@@ -13,3 +13,12 @@
     = stylesheets
   %body
     = yield
+  %footer
+    %p= t.trademark
+    - if t.thanks.translated?
+      %p= t.thanks
+    %p= t.this("http://github.com/RKelln/Ubuntu-Homepage")
+  %ul#languages
+    %li= link "English", "index_en.html"
+    %li= link "Deutch", "index_de.html"
+    %li= link "Portuguese", "index_pt.html"

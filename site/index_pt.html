@@ -18,7 +18,7 @@
 <div id="engines"></div>
 <div id="input">
 <form id="form" onsubmit="return doSearch();">
-<a id="lang" onclick="nextLanguage();" style="display:none;" title="Set the search language. Click to change."></a>
+<a id="lang" onclick="nextLanguage();" style="display:none;" title="Muda o idioma no qual se pesquisará. Clique para mudar."></a>
 <input class="search" id="i" placeholder="Pesquisa" type="text">
 <input class="go" type="submit" value="Buscar">
 </form>
@@ -28,25 +28,25 @@
 <article id="help">
 <section id="getting-started">
 <h3>Iniciando</h3>
-<p>Bem Vindo ao <a href="http://ubuntu.com/">Ubuntu!</a> To start exploring the Internet, type what you're looking for in the Search box above.</p>
+<p>Bem Vindo ao <a href="http://ubuntu.com/">Ubuntu!</a> Para procurar algo na internet, digite a sua pesquisa na caixa acima, escolha em qual dos sites você deseja que a busca seja realizada e clique em Buscar.</p>
 <p>Incluindo "Ubuntu" ou "ajuda Ubuntu" em sua pesquisa, você encontrará ajuda sobre o que procura. É importante incluir a <a href="http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers">versão do Ubuntu</a> a qual voc6e está usando (como 10.04 ou 10.10).</p>
-<p>Por exemplo: <em>Ubuntu 10.04 como assistir DVD?</em></p>
-<p>O Ubuntu tem uma extensa e amigável <a href="http://www.ubuntu.com/community">comunidade</a> que encoraja a expor dúvidas e participar dela. <a href="http://www.canonical.com/">A Canonical</a> , companhia responsável pelo projeto Ubuntu, oferece um número de <a href="http://www.ubuntu.com/desktop/services">serviços de suporte pago</a>.</p>
-<p>Para saber mais sobre os novos recursos do Ubuntu <a href="http://www.ubuntu.com/desktop/features">clique aqui</a> ou <a href="http://www.ubuntu.com/project">aqui</a> para aprender sobre o projeto em si.</p>
+<p>Por exemplo: <em>Ubuntu 10.04 como assistir DVD</em></p>
+<p>O Ubuntu tem uma extensa e amigável <a href="http://www.ubuntu.com/community">comunidade</a> que encoraja a expor dúvidas e participar dela. <a href="http://www.canonical.com/">A Canonical</a> , companhia responsável pelo projeto Ubuntu, oferece alguns <a href="http://www.ubuntu.com/desktop/services">serviços de suporte pagos</a>.</p>
+<p>Para saber mais sobre os novos recursos do Ubuntu <a href="http://www.ubuntu.com/desktop/features">clique aqui</a> , e <a href="http://www.ubuntu.com/project">aqui</a> para aprender sobre o projeto em si.</p>
 <p>O Ubuntu é livre, mas você pode mantê-lo das seguintes formas:
-<a href="http://wiki.ubuntu.com/UbuntuDeveloperWeek">desenvolvendo-o</a>, 
+<a href="http://wiki.ubuntu.com/UbuntuDeveloperWeek">desenvolvendo-o</a>,
 <a href="http://help.ubuntu.com/community/ReportingBugs">reportando falhas</a>,
 <a href="http://shop.ubuntu.com">comprando itens e outros</a>,
-no e-shop, ou aumentando a sua 
+no e-shop, ou aumentando a sua
 <a href="http://one.ubuntu.com/">conta UbuntuOne</a>.
 </p>
 </section>
 <section id="resources">
 <h3>Recursos de Suporte</h3>
-<p>O Ubuntu tem uma base referencial de ajuda, chamada Centro de Ajuda Ubuntu. Você pode acessá-la simplesmente selecionando o menu <em>Sistema</em> e clicando no item <em>Ajuda e Suporte</em>.</p>
+<p>O Ubuntu tem uma base referencial de ajuda, chamada Centro de Ajuda Ubuntu. Você pode acessá-la simplesmente selecionando o menu <em>Sistema</em> e clicando no item <em>Ajuda e Suporte</em>, lá você pode encontrar ajuda para desempenhar suas tarefas e esclarecer suas dúvidas.</p>
 <p>Há também recursos online muito úteis como:</p>
 <ul class="links">
-<li>A <a href="http://help.ubuntu.com/"> Documentação Oficial</a> e o <a href="http://www.ubuntu.com/support/community">Suporte Comunitário</a></li>
+<li>A <a href="http://help.ubuntu.com/">Documentação Oficial</a> e o <a href="http://www.ubuntu.com/support/community">Suporte Comunitário</a></li>
 <li>A <a href="http://help.ubuntu.com/community">documentação</a> e as <a href="http://help.ubuntu.com/community/CommonQuestions">perguntas frenquentes</a> da comunidade</li>
 <li>
 <a href="http://askubuntu.com/">AskUbuntu.com</a>
@@ -76,7 +76,7 @@ no e-shop, ou aumentando a sua
 </section>
 <section id="news">
 <h3>Notícias e Comunidade</h3>
-<p>These sites can come in handy for keeping up with Ubuntu news and tips.</p>
+<p>Sites perfeitos para se manter ligado às notícias e dicas do Ubuntu.</p>
 <ul class="links">
 <li>
 <a href="http://ubuntu-news.org/">Ubuntu News</a>
@@ -87,7 +87,7 @@ no e-shop, ou aumentando a sua
 </li>
 <li>
 <a href="http://www.omgubuntu.co.uk/">OMG Ubuntu</a>
-<p class="description">The latest Ubuntu news, application development updates, information, tips and more</p>
+<p class="description">As últimas notícias sobre o Ubuntu, desenvolvimento e atualização de aplicativos, informação, dicas e muito mais</p>
 </li>
 <li>
 <a href="http://brainstorm.ubuntu.com/">Ubuntu Brainstorm</a>
@@ -126,17 +126,33 @@ Representa uma prática, filosofia e comunidade, melhores ilustrados por quatro 
 </article>
 <div class="clearfix"></div>
 </div>
-<footer>
-<p>Ubuntu é uma marca registrada da Canonical. Google, Wikipedia, YouTube, e Twitter são marcas de suas respectivas companhias.</p>
-<p>Este website é <a href="http://github.com/RKelln/Ubuntu-Homepage">software livre</a>.</p>
-</footer>
 </div>
+<script type="text/javascript">
+  //<![CDATA[
+    // This must come before loading scripts/scripts.js
+    
+    // TODO: add to this, do not create, in case it already has entries
+    var js_translations = {
+      'Web'           : "Web",
+      'Images'        : "Imagens",
+      'Maps'          : "Mapas",
+      'News'          : "Notícias",
+      'Go to Article' : "Ir ao Artigo",
+      'Search'        : "Procurar",
+      'Videos'        : "Vídeos",
+      'Search Twitter': "Procurar Twitter",
+      'Ubuntu Help'   : "Ubuntu Suporte"
+    }
+  //]]>
+</script>
+
 <script src="scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="scripts/tools.js" type="text/javascript"></script>
 <script src="scripts/scripts.js" type="text/javascript"></script>
 <script src="engines/base.js" type="text/javascript"></script>
 <script type="text/javascript">
   //<![CDATA[
+    // This must come after loading jquery  
     
     $(document).ready(function() {
     
@@ -162,4 +178,14 @@ Representa uma prática, filosofia e comunidade, melhores ilustrados por quatro 
 </script>
 
 </body>
+<footer>
+<p>Ubuntu é uma marca registrada da Canonical. Google, Wikipedia, YouTube, e Twitter são marcas de suas respectivas companhias.</p>
+<p>This page was created by <a href="http://ryankelln.com/">Ryan Kelln</a> and is based on work by Philipp Antoni and spiceofdesign. Thanks to Rodrigo Martins and <a href="http://visionfactory.net/">Jan Schuermann</a> for translations.</p>
+<p>Este website é <a href="http://github.com/RKelln/Ubuntu-Homepage">software livre</a>.</p>
+</footer>
+<ul id="languages">
+<li><a href="index_en.html">English</a></li>
+<li><a href="index_de.html">Deutch</a></li>
+<li><a href="index_pt.html">Portuguese</a></li>
+</ul>
 </html>

@@ -1,6 +1,10 @@
-#require "staticmatic/compass"
+require "staticmatic/compass"
 
 project_type = :staticmatic
+
+ROOT = File.join(File.dirname(__FILE__), '..')
+puts "Site root is: " + File.expand_path(ROOT)
+project_path = ROOT               # must be set for Compass to work 
 
 http_path = "/"
 http_images_path = "/images"

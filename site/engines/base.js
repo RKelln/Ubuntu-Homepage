@@ -5,15 +5,22 @@
  *     autocomplete and suggestions as you type. At some point it
  *     might be nice to replace with something that talks to Google
  *     et al directly and not through go.infinse.com
+ *
+ * Translations for button text are done in two places:
+ *  - src/pages/index.haml:
+ *    there is a js_translations object that maps the english button
+ *    text in base.js to the text in the translations
+ *  - src/i18n/language.yml:
+ *    look for the search: category
  */
 
 var default_languages = {
 	'EN': 'en',
 	'DE': 'de',
+	'PT': 'pt',
 	'FR': 'fr',
 	'IT': 'it',
-	'ES': 'es',
-	'PT': 'pt'
+	'ES': 'es'
 }
 
 /*	GOOGLE

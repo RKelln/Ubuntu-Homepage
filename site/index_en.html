@@ -125,17 +125,33 @@ at the shop, or upgrade your
 </article>
 <div class="clearfix"></div>
 </div>
-<footer>
-<p>Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies.</p>
-<p>This webpage is <a href="http://github.com/RKelln/Ubuntu-Homepage">free software</a>.</p>
-</footer>
 </div>
+<script type="text/javascript">
+  //<![CDATA[
+    // This must come before loading scripts/scripts.js
+    
+    // TODO: add to this, do not create, in case it already has entries
+    var js_translations = {
+      'Web'           : "Web",
+      'Images'        : "Images",
+      'Maps'          : "Maps",
+      'News'          : "News",
+      'Go to Article' : "Go to Article",
+      'Search'        : "Search",
+      'Videos'        : "Videos",
+      'Search Twitter': "Search Twitter",
+      'Ubuntu Help'   : "Ubuntu Help"
+    }
+  //]]>
+</script>
+
 <script src="scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script src="scripts/tools.js" type="text/javascript"></script>
 <script src="scripts/scripts.js" type="text/javascript"></script>
 <script src="engines/base.js" type="text/javascript"></script>
 <script type="text/javascript">
   //<![CDATA[
+    // This must come after loading jquery  
     
     $(document).ready(function() {
     
@@ -161,4 +177,14 @@ at the shop, or upgrade your
 </script>
 
 </body>
+<footer>
+<p>Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies.</p>
+<p>This page was created by <a href="http://ryankelln.com/">Ryan Kelln</a> and is based on work by Philipp Antoni and spiceofdesign. Thanks to Rodrigo Martins and <a href="http://visionfactory.net/">Jan Schuermann</a> for translations.</p>
+<p>This webpage is <a href="http://github.com/RKelln/Ubuntu-Homepage">free software</a>.</p>
+</footer>
+<ul id="languages">
+<li><a href="index_en.html">English</a></li>
+<li><a href="index_de.html">Deutch</a></li>
+<li><a href="index_pt.html">Portuguese</a></li>
+</ul>
 </html>

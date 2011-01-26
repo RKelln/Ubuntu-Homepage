@@ -1,12 +1,33 @@
 meta:
   title: Ubuntu homepage
   description: Ubuntu search and help homepage
-  
+  language: English
+
+ubuntu:
+  v10-04:
+    adjective: Lucid
+    animal: Lynx
+  v10-10: 
+    adjective: Maverick 
+    animal: Meercat
+  v11-04:
+    adjective: Natty
+    animal: Narwhal
+
 search:
   placeholder: Search
   language: Set the search language. Click to change.
   go: Go
-  
+  web: Web
+  images: Images
+  maps: Maps
+  news: News
+  article: Go to Article
+  search: Search
+  video: Videos
+  twitter: Search Twitter
+  ubuntu: Ubuntu Help
+
 welcome:
   title: Getting started
   p1:
@@ -110,5 +131,5 @@ foss:
   ubuntu: In the spirit of free and open source software, Ubuntu is absolutely free to download, use, share and improve however and whenever you like.
 
 trademark: Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies.
-thanks:
+thanks: This page was created by <a href="http://ryankelln.com/">Ryan Kelln</a> and is based on work by Philipp Antoni and spiceofdesign. Thanks to Rodrigo Martins and <a href="http://visionfactory.net/">Jan Schuermann</a> for translations.
 this: This webpage is <a href="%1">free software</a>.

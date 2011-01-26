@@ -1,17 +1,26 @@
 meta:
   title: "Ubuntu Startsiete: Suche und Hilfe"
-  description:
+  description: "Ubuntu Startsiete: Suche und Hilfe"
+  language: Deutsch
   
 search:
   placeholder: Suchen
-  language:
-  go:
+  go: Suche
+  web: Web
+  images: Bilder 
+  maps: Stadtplan
+  news: Nachrichten
+  article: Zum Artikel
+  search: Suche
+  video: Videos
+  twitter: Suche Twitter
+  ubuntu: Ubuntu Hilfe
   
 welcome:
   title: Erste Schritte
   p1:
     Willkommen bei <a href="http://ubuntu.com/">Ubuntu!</a>
-    To start exploring the Internet, type what you're looking for in the Search box above.
+    Um das Internet zu durchsuchen tippen Sie einfach das gesuchte in das schwarze Eingabefeld.
   p2:
     Für Hilfe zu Ubuntu geben Sie einfach "ubuntu" oder "ubuntu hilfe" in das Suchfeld ein. Für genauere Ergebnisse können Sie die installierte
     <a href="http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers">version von Ubuntu</a>
@@ -43,7 +52,7 @@ support:
   title: Hilfe bekommen
   help_center:
     Ubuntu hat eine integrierte Hilfe, das Ubuntu Help Center. 
-    Sie öffnen das Ubuntu Help Center im <em>System</em> Menü durch Auswahl von <em>Hilfe und Unterstützung</em>. 
+    Sie öffnen das Ubuntu Help Center im <em>System</em> Menü durch Auswahl von <em>Hilfe und Unterstützung</em>, dort finden Sie Hilfe, um Aufgaben auszuführen und klären Sie Ihre Zweifel. 
   other: "Hilfreiche Internetseiten sind unter anderem:"
   official:
     Die offizielle <a href="http://help.ubuntu.com/">Ubuntu Dokumentation (auf Englisch)</a> und der 
@@ -81,7 +90,7 @@ news:
     title: Ubuntu Weekly Newsletter
   omgubuntu:
     title: OMG Ubuntu
-    details: The latest Ubuntu news, application development updates, information, tips and more
+    details: Guter Blog über die neuesten Entwicklungen bei Ubuntu und freier Software
   brainstorm:
     title: Ubuntu Brainstorm
     details: Hier hat jeder die Möglichkeit neue Ideen zur Verbesserung von Ubuntu einzubringen
@@ -108,5 +117,3 @@ foss:
   ubuntu: Im Geiste von Freie und Open Source ist Ubuntu absolut kostenlos herunterzuladen, zu verwenden, zu kopieren und zu verbessern wie und wann immer Sie möchten. 
 
 trademark: Ubuntu ist eine eingetragene Marke von Canonical. Google, Wikipedia, YouTube, und Twitter sind alles Warenzeichen der jeweiligen Firmen.
-thanks: 
-this: This webpage is <a href="%1">free software</a>.
