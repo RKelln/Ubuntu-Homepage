@@ -26,7 +26,7 @@ welcome:
     Incluindo "Ubuntu" ou "ajuda Ubuntu" em sua pesquisa, você encontrará ajuda sobre o que procura.
     É importante incluir a
     <a href="http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers">versão do Ubuntu</a>
-    a qual voc6e está usando (como 10.04 ou 10.10).
+    a qual você está usando (como 10.04 ou 10.10).
   p3:
     "Por exemplo: <em>Ubuntu 10.04 como assistir DVD</em>"
   p4:
@@ -82,10 +82,10 @@ news:
   title: Notícias e Comunidade
   description: Sites perfeitos para se manter ligado às notícias e dicas do Ubuntu.
 # Uncomment to add a local news site
-#  local:
-#    title: Example Local News Title
-#    url: http://examplelocalnews.com/
-#    details: Example details
+  local:
+    title: Ubuntued
+    url: "http://ubuntued.com/"
+    details: Notícias, novidades, temas, aplicativos, jogos e muito mais sobre Ubuntu em um só lugar.
   fridge:
     title: Ubuntu News
     details: Conhecido como "The Fridge", é um bom lugar para se iniciar com notícias sobre o Ubuntu
@@ -123,4 +123,5 @@ foss:
   ubuntu: No espírito do código aberto, o Ubuntu é e sempre será livre para você o tranferir, usar, compartilhar e melhorar o que quer que seja, sempre que quiser.
 
 trademark: Ubuntu é uma marca registrada da Canonical. Google, Wikipedia, YouTube, e Twitter são marcas de suas respectivas companhias.
+thanks: Esta página foi criada por <a href="http://ryankelln.com/">Ryan Kelln</a> e é baseada no trabalho de Philipp Antoni e spiceofdesign. Agradecimentos à Rodrigo Martins e <a href="http://visionfactory.net/">Jan Schuermann</a> pelas traduções.
 this: Este website é <a href="%1">software livre</a>.

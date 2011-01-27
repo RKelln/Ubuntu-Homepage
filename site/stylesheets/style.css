@@ -1,4 +1,6 @@
 /*@font-face font-family: Ubuntu src: local('☺'), url('Ubuntu-Regular.woff') format('woff'), url('Ubuntu-Regular.ttf') format('truetype')  @font-face font-family: Ubuntu src: local('☺'), url('Ubuntu-Bold.woff') format('woff'), url('Ubuntu-Bold.ttf') format('truetype') font-weight: bold */
+@charset "UTF-8";
+@charset "UTF-8";
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -167,8 +169,8 @@ footer { font-size: 80%; margin-top: 1em; padding: 1em 120px; background: #aea79
 
 #languages { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; *zoom: 1; font-size: 80%; padding: 0.5em 120px; }
 #languages li { list-style-image: none; list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
-#languages li:first-child, #languages li.first { padding-left: 0px; }
-#languages li:last-child, #languages li.last { padding-right: 0px; }
+#languages li:first-child, #languages li.first { padding-left: 0; }
+#languages li:last-child, #languages li.last { padding-right: 0; }
 
 @media all and (orientation:portrait);
 @media all and (orientation:landscape);
