@@ -84,7 +84,7 @@ news:
 # Uncomment to add a local news site
   local:
     title: Ubuntued
-    url: "http://ubuntued.com/"
+    url: "http://ubuntued.info/"
     details: Notícias, novidades, temas, aplicativos, jogos e muito mais sobre Ubuntu em um só lugar.
   fridge:
     title: Ubuntu News
