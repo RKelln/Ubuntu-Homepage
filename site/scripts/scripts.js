@@ -192,11 +192,12 @@ function build(e, animate)
 		$("#method").html("");
 		for (place in e.places) {
 		  // look up translation if it exists
+		  var place_translation = place;
 		  if (js_translations !== "undefined" && js_translations[place]) {
-		    place = js_translations[place];
+		    place_translation = js_translations[place];
 		  }
-		  $("#method").append("<a onclick='setPlace(this, true)'>"+place+"</a>");
-		  
+		  var new_place = $("<a onclick='setPlace(this, true)'>"+place_translation+"</a>").data("search-type", place);
+		  $("#method").append(new_place);
 		}
 
 		setPlace("#method a:first");
@@ -207,8 +208,8 @@ function build(e, animate)
 
 function setPlace(place, focus)
 {
-	current.place = $(place).html();
-
+  current.place = $(place).data("search-type");
+  
 	$("#method a").removeClass("active");
 	$(place).addClass("active");
 	setFocus(focus);
@@ -274,7 +275,7 @@ function nextPlace()
 	var nextPlace = findNext(eng[current.engine].places, current.place);
 	$("#method a").each(function()
 	{
-		if ($(this).html() == nextPlace) setPlace($(this), true);
+		if ($(this).data("search-type") == nextPlace) setPlace($(this), true);
 	})
 }
 
