@@ -17,8 +17,11 @@
     %p= t.trademark
     - if t.thanks.translated?
       %p= t.thanks
-    %p= t.this("http://github.com/RKelln/Ubuntu-Homepage")
+    %p= t.this(:url => "http://github.com/RKelln/Ubuntu-Homepage")
   %ul#languages
     %li= link "English", "index_en.html"
     %li= link "Deutch", "index_de.html"
-    %li= link "Portuguese", "index_pt.html"
+    %li= link "Español", "index_es.html"
+    %li= link "Português", "index_pt.html"
+    
+    

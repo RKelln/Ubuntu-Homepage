@@ -12,96 +12,97 @@
         %p#method
 
     %article#help
-      %section#getting-started
-        %h3= t.welcome.title
-        %p= t.welcome.p1
-        %p= t.welcome.p2
-        %p= t.welcome.p3
-        %p= t.welcome.p4
-        %p= t.welcome.p5
-        %p= t.welcome.p6
-        
-      %section#resources
-        %h3= t.support.title
-        %p= t.support.help_center
-        %p= t.support.other
-        %ul.links
-          %li= t.support.official
-          %li= t.support.community
-          %li
-            = link t.support.askubuntu.title, "http://askubuntu.com/"
-            %p.description= t.support.askubuntu.details
-          %li
-            = link t.support.forums.title, "http://ubuntuforums.org/"
-            %p.description= t.support.forums.details
-          %li
-            = link t.support.manual.title, "http://ubuntu-manual.org/"
-            %p.description= t.support.manual.details
-          %li
-            = link t.support.screencasts.title, "http://screencasts.ubuntu.com/"
-            %p.description= t.support.screencasts.details
-            
-          %li.firefox-only(style="display:none")
-            = link t.support.browser.title("Firefox"), "http://support.mozilla.com/"
-            %p.description= t.support.browser.details
+      %div.clearfix
+        %section#getting-started
+          %h3= t.welcome.title
+          %p= t.welcome.p1
+          %p= t.welcome.p2
+          %p= t.welcome.p3
+          %p= t.welcome.p4
+          %p= t.welcome.p5
+          %p= t.welcome.p6
           
-          %li.chrome-only(style="display:none")
-            = link t.support.browser.title("Chrome"), "http://www.google.com/support/chrome/"
-            %p.description= t.support.browser.details
-            
-        -# %p Search the above support resources using Google:
-          #cse(style="width: 100%;") Loading
-          %script(src="http://www.google.com/jsapi" type="text/javascript")
-          :javascript
-            google.load('search', '1');
-            google.setOnLoadCallback(function() {
-              var customSearchControl = new google.search.CustomSearchControl('018237401486098408222:9-etvmzd4j4');
-              customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-              customSearchControl.draw('cse');
-            }, true);
-
-      %section#news
-        %h3= t.news.title
-        %p= t.news.description
-        %ul.links
-          - if t.news.local.translated?
+        %section#resources
+          %h3= t.support.title
+          %p= t.support.help_center
+          %p= t.support.other
+          %ul.links
+            %li= t.support.official
+            %li= t.support.community
             %li
-            = link t.news.local.title, t.news.local.url
-            %p.description= t.news.local.details
-          %li
-            = link t.news.fridge.title, "http://ubuntu-news.org/"
-            %p.description= t.news.fridge.details
-          %li
-            = link t.news.newsletter.title, "http://wiki.ubuntu.com/UbuntuWeeklyNewsletter/Current"
-          %li
-            = link t.news.omgubuntu.title, "http://www.omgubuntu.co.uk/"
-            %p.description= t.news.omgubuntu.details
-          %li
-            = link t.news.brainstorm.title, "http://brainstorm.ubuntu.com/"
-            %p.description= t.news.brainstorm.details
-          %li
-            = link t.news.shuttleworth.title, "http://www.markshuttleworth.com/"
-            %p.description= t.news.shuttleworth.details
-
-        %ul.links.advanced
-          %li
-            = link "Planet Ubuntu", "http://planet.ubuntu.com/"
-            %p.description Blog aggregrator for Ubuntu developers and community members
-          %li
-            = link "Launchpad", "https://launchpad.net/"
-            %p.description= t.news.launchpad.details
+              = link t.support.askubuntu.title, "http://askubuntu.com/"
+              %p.description= t.support.askubuntu.details
+            %li
+              = link t.support.forums.title, "http://ubuntuforums.org/"
+              %p.description= t.support.forums.details
+            %li
+              = link t.support.manual.title, "http://ubuntu-manual.org/"
+              %p.description= t.support.manual.details
+            %li
+              = link t.support.screencasts.title, "http://screencasts.ubuntu.com/"
+              %p.description= t.support.screencasts.details
               
-      
-      %section#freedom
-        %h3= t.foss.title
-        %p= t.foss.more
-        %ul
-          %li= t.foss.freedom0
-          %li= t.foss.freedom1
-          %li= t.foss.freedom2
-          %li= t.foss.freedom3
-        %p= t.foss.org
-        %p= t.foss.ubuntu
+            %li.firefox-only(style="display:none")
+              = link t.support.browser.title(:browser => "Firefox"), "http://support.mozilla.com/"
+              %p.description= t.support.browser.details
+            
+            %li.chrome-only(style="display:none")
+              = link t.support.browser.title(:browser => "Chrome"), "http://www.google.com/support/chrome/"
+              %p.description= t.support.browser.details
+              
+          -# %p Search the above support resources using Google:
+            #cse(style="width: 100%;") Loading
+            %script(src="http://www.google.com/jsapi" type="text/javascript")
+            :javascript
+              google.load('search', '1');
+              google.setOnLoadCallback(function() {
+                var customSearchControl = new google.search.CustomSearchControl('018237401486098408222:9-etvmzd4j4');
+                customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+                customSearchControl.draw('cse');
+              }, true);
+      %div.clearfix
+        %section#news
+          %h3= t.news.title
+          %p= t.news.description
+          %ul.links
+            - if t.news.local.translated? and t.news.local.title.translated? and not t.news.local.title.empty?
+              %li
+              = link t.news.local.title, t.news.local.url
+              %p.description= t.news.local.details
+            %li
+              = link t.news.fridge.title, "http://ubuntu-news.org/"
+              %p.description= t.news.fridge.details
+            %li
+              = link t.news.newsletter.title, "http://wiki.ubuntu.com/UbuntuWeeklyNewsletter/Current"
+            %li
+              = link t.news.omgubuntu.title, "http://www.omgubuntu.co.uk/"
+              %p.description= t.news.omgubuntu.details
+            %li
+              = link t.news.brainstorm.title, "http://brainstorm.ubuntu.com/"
+              %p.description= t.news.brainstorm.details
+            %li
+              = link t.news.shuttleworth.title, "http://www.markshuttleworth.com/"
+              %p.description= t.news.shuttleworth.details
+
+          %ul.links.advanced
+            %li
+              = link t.news.planet.title, "http://planet.ubuntu.com/"
+              %p.description= t.planet.details
+            %li
+              = link t.news.launchpad.title, "https://launchpad.net/"
+              %p.description= t.news.launchpad.details
+                
+        
+        %section#freedom
+          %h3= t.foss.title
+          %p= t.foss.more
+          %ul
+            %li= t.foss.freedom0
+            %li= t.foss.freedom1
+            %li= t.foss.freedom2
+            %li= t.foss.freedom3
+          %p= t.foss.org
+          %p= t.foss.ubuntu
     .clearfix
 
 :javascript

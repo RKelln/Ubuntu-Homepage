@@ -1,7 +1,7 @@
 Release History
 =============
 
-* master on github
+* __0.3: *12 Feb 2011* Internationalization initialized
     * easier to modify default language order
     * use HTML 5 localStorage for remembering search engine and language preference
     * add News search to Google
@@ -14,6 +14,12 @@ Release History
       * very basic language switcher
     * added fancy css transitions
     * use compass mixins in sass
+    * updated translations to use webtranslateit.com service
+      * custom loader for rails i18n format for r18n-core
+    * added build.rb script (update translations, build, fix stylesheet paths)
+    * added Spanish translation (thanks albertoi)
+    * fix layout bug with sections
+    * build index.html (in English) as well as index_en.html
 
 * __0.2: *17 Jan 2011* Ready for trial installs__
     * added how to support Ubuntu text

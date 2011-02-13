@@ -27,19 +27,19 @@ configuration.haml_options = {
 # R18n
 #
 require 'r18n-core'
-preview_language = 'en' # requires restart of preview if changed
-R18n.set(R18n::I18n.new(preview_language, File.join(@src_dir, 'i18n')))
+@config_dir = File.expand_path(File.join(File.dirname(__FILE__), "config"))
+@i18n_dir = File.join(@src_dir, "i18n")
+require File.join(@config_dir, 'i18nloader.rb')
+R18n.default_loader = R18n::Loader::I18nFormat
 
-#
-# Haml filter
-#
-R18n::Filters.add('haml', :haml) do |content, config|
-  require 'ruby-debug'; debugger
-  #require 'haml'
-  html = Haml::Engine.new(content, configuration.haml_options)
-  html.render
-end
+default_language = 'en' # requires restart of preview if changed
+R18n.set R18n::I18n.new(default_language, @i18n_dir)
 
+# preview
+#R18n::Filters.add(R18n::Untranslated, :untranslated_html) do
+# |content, config, translated_path, untranslated_path, path|
+# "#{translated_path}<span style='color: red'>#{untranslated_path}</span>"
+#end
 
 #
 # modify build steps to do translations
@@ -47,10 +47,15 @@ end
 module StaticMatic::BuildMixin
   def build
     build_css
-    if File.exist?(File.join(@src_dir, 'i18n'))
+    if R18n and R18n.get
+      # hide untranslated text
+      R18n::Filters.add(R18n::Untranslated, :hide_untranslated) { '' }
+      # build default language
+      build_html
+      # build for each locale
       R18n.get.available_locales.each do |locale|
         # TODO: set the active locale instead of setting the entire R18n object?
-        R18n.set(R18n::I18n.new(locale.code, File.join(@src_dir, 'i18n')))
+        R18n.set R18n::I18n.new(locale.code, @i18n_dir)
         build_html(locale.code)
       end
     else

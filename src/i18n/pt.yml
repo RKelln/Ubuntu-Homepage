@@ -1,127 +1,96 @@
-meta:
-  title: Página inicial Ubuntu
-  description: Ubuntu search and help homepage
-  language: Portuguese
-  
-search:
-  placeholder: Pesquisa
-  language: Muda o idioma no qual se pesquisará. Clique para mudar.
-  go: Buscar
-  web: Web
-  images: Imagens
-  maps: Mapas
-  news: Notícias
-  article: Ir ao Artigo
-  search: Procurar
-  video: Vídeos
-  twitter: Procurar Twitter
-  ubuntu: Ubuntu Suporte
-
-welcome:
-  title: Iniciando
-  p1:
-    Bem Vindo ao <a href="http://ubuntu.com/">Ubuntu!</a>
-    Para procurar algo na internet, digite a sua pesquisa na caixa acima, escolha em qual dos sites você deseja que a busca seja realizada e clique em Buscar.
-  p2:
-    Incluindo "Ubuntu" ou "ajuda Ubuntu" em sua pesquisa, você encontrará ajuda sobre o que procura.
-    É importante incluir a
-    <a href="http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers">versão do Ubuntu</a>
-    a qual você está usando (como 10.04 ou 10.10).
-  p3:
-    "Por exemplo: <em>Ubuntu 10.04 como assistir DVD</em>"
-  p4:
-    O Ubuntu tem uma extensa e amigável
-    <a href="http://www.ubuntu.com/community">comunidade</a>
-    que encoraja a expor dúvidas e participar dela.
-    <a href="http://www.canonical.com/">A Canonical</a>
-    , companhia responsável pelo projeto Ubuntu, oferece alguns
-    <a href="http://www.ubuntu.com/desktop/services">serviços de suporte pagos</a>.
-  p5:
-    Para saber mais sobre os novos recursos do Ubuntu
-    <a href="http://www.ubuntu.com/desktop/features">clique aqui</a>
-    , e
-    <a href="http://www.ubuntu.com/project">aqui</a>
-    para aprender sobre o projeto em si.
-  p6: |
-    O Ubuntu é livre, mas você pode mantê-lo das seguintes formas:
-    <a href="http://wiki.ubuntu.com/UbuntuDeveloperWeek">desenvolvendo-o</a>,
-    <a href="http://help.ubuntu.com/community/ReportingBugs">reportando falhas</a>,
-    <a href="http://shop.ubuntu.com">comprando itens e outros</a>,
-    no e-shop, ou aumentando a sua
-    <a href="http://one.ubuntu.com/">conta UbuntuOne</a>.
-
-support:
-  title: Recursos de Suporte
-  help_center:
-    O Ubuntu tem uma base referencial de ajuda, chamada Centro de Ajuda Ubuntu.
-    Você pode acessá-la simplesmente selecionando o menu <em>Sistema</em> e clicando no item <em>Ajuda e Suporte</em>, lá você pode encontrar ajuda para desempenhar suas tarefas e esclarecer suas dúvidas.
-  other: "Há também recursos online muito úteis como:"
-  official:
-    A <a href="http://help.ubuntu.com/">Documentação Oficial</a>
-    e o <a href="http://www.ubuntu.com/support/community">Suporte Comunitário</a>
-  community:
-    A <a href="http://help.ubuntu.com/community">documentação</a>
-    e as <a href="http://help.ubuntu.com/community/CommonQuestions">perguntas frenquentes</a> da comunidade
-  askubuntu:
-    title: AskUbuntu.com
-    details: Um bom lugar para perguntar dúvidas e encontrar a resposta para problemas isolados
-  forums:
-    title: Fóruns da comunidade
-    details: Discussões e ajuda
-  manual:
-    title: "Projeto: Manual Ubuntu"
-    details: Um manual compreensivo para o Ubuntu 10.04, desenvolvido pela própria comunidade
-  screencasts:
-    title: Ubuntu Screencasts
-    details: '"Como se faz" vídeos'
-  browser:
-    title: Suporte ao navegador web %1
-    details: Se você tiver dúvidas ou problemas quanto a este navegador
-
-news:
-  title: Notícias e Comunidade
-  description: Sites perfeitos para se manter ligado às notícias e dicas do Ubuntu.
-# Uncomment to add a local news site
-  local:
-    title: Ubuntued
-    url: "http://ubuntued.info/"
-    details: Notícias, novidades, temas, aplicativos, jogos e muito mais sobre Ubuntu em um só lugar.
-  fridge:
-    title: Ubuntu News
-    details: Conhecido como "The Fridge", é um bom lugar para se iniciar com notícias sobre o Ubuntu
-  newsletter:
-    title: Ubuntu Weekly Newsletter
-  omgubuntu:
-    title: OMG Ubuntu
-    details: As últimas notícias sobre o Ubuntu, desenvolvimento e atualização de aplicativos, informação, dicas e muito mais
-  brainstorm:
-    title: Ubuntu Brainstorm
-    details: Um lugar onde a comunidade debate sobre suas ideias para melhorar o Ubuntu
-  shuttleworth:
-    title: O blog de Mark Shuttleworth
-    details: Fundador do Ubuntu e líder de design e estratégia de produto da <a href="http://www.canonical.com/">Canonical Ltd</a>
-  planet:
-    title: Planet Ubuntu
-    details: Blog agregador para desenvolvedores e membros da comunidade Ubuntu
-  launchpad:
-    details: Acompanhamento de falhas, <a href="http://launchpad.net/ubuntu/+ppas" title="Personal Package Archives">PPAs</a>, e páginas de projetos
-
-foss:
-  title: Software Livre e de Código Aberto
-  more: |
-    O Software Livre representa mais do que bites que você transfere e instala em seu computador.
-    Representa uma prática, filosofia e comunidade, melhores ilustrados por quatro princípios:
-  freedom0: A liberdade de rodar o programa, para qualquer fim
-  freedom1: A liberdade de estudar como o programa funciona e modificar tal para fazer o que você deseja
-  freedom2: A liberdade de redistribuir cópias podendo ajudar o seu vizinho
-  freedom3: A liberdade de distribuir cópias de suas versões modificadas aos outros
-  org:
-    Para aprender mais sobre software livre acesse a
-    <a href="http://fsf.org/">Fundação do Software Livre (FSF)</a>
-    e a
-    <a href="http://www.opensource.org/">Iniciativa Open Source (OSI)</a>, para aprender sobre código aberto.
-  ubuntu: No espírito do código aberto, o Ubuntu é e sempre será livre para você o tranferir, usar, compartilhar e melhorar o que quer que seja, sempre que quiser.
-
-trademark: Ubuntu é uma marca registrada da Canonical. Google, Wikipedia, YouTube, e Twitter são marcas de suas respectivas companhias.
-thanks: Esta página foi criada por <a href="http://ryankelln.com/">Ryan Kelln</a> e é baseada no trabalho de Philipp Antoni e spiceofdesign. Agradecimentos à Rodrigo Martins e <a href="http://visionfactory.net/">Jan Schuermann</a> pelas traduções.
-this: Este website é <a href="%1">software livre</a>.
+pt:
+  foss:
+    freedom0: "A liberdade de rodar o programa, para qualquer fim"
+    freedom1: "A liberdade de estudar como o programa funciona e modificar tal para fazer o que você deseja"
+    freedom2: "A liberdade de redistribuir cópias podendo ajudar o seu vizinho"
+    freedom3: "A liberdade de distribuir cópias de suas versões modificadas aos outros"
+    more: "O Software Livre representa mais do que bites que você transfere e instala em seu computador. Representa uma prática, filosofia e comunidade, melhores ilustrados por quatro princípios:"
+    org: "Para aprender mais sobre software livre acesse a <a href=\"http://fsf.org/\">Fundação do Software Livre (FSF)</a> e a <a href=\"http://www.opensource.org/\">Iniciativa Open Source (OSI)</a>, para aprender sobre código aberto."
+    title: "Software Livre e de Código Aberto"
+    ubuntu: "No espírito do código aberto, o Ubuntu é e sempre será livre para você o tranferir, usar, compartilhar e melhorar o que quer que seja, sempre que quiser."
+  meta:
+    description: ~
+    language: Português
+    title: "Página inicial Ubuntu"
+  news:
+    brainstorm:
+      details: "Um lugar onde a comunidade debate sobre suas ideias para melhorar o Ubuntu"
+      title: "Ubuntu Brainstorm"
+    description: "Sites perfeitos para se manter ligado às notícias e dicas do Ubuntu."
+    fridge:
+      details: "Conhecido como \"The Fridge\", é um bom lugar para se iniciar com notícias sobre o Ubuntu"
+      title: "Ubuntu News"
+    launchpad:
+      details: "Acompanhamento de falhas, <a href=\"http://launchpad.net/ubuntu/+ppas\" title=\"Personal Package Archives\">PPAs</a>, e páginas de projetos"
+      title: Launchpad
+    local:
+      details: "Notícias, novidades, temas, aplicativos, jogos e muito mais sobre Ubuntu em um só lugar"
+      title: Ubuntued
+      url: "http://ubuntued.info/"
+    newsletter:
+      title: "Ubuntu Weekly Newsletter"
+    omgubuntu:
+      details: "As últimas notícias sobre o Ubuntu, desenvolvimento e atualização de aplicativos, informação, dicas e muito mais"
+      title: "OMG Ubuntu"
+    planet:
+      details: "Blog agregador para desenvolvedores e membros da comunidade Ubuntu"
+      title: "Planet Ubuntu"
+    shuttleworth:
+      details: "Fundador do Ubuntu e líder de design e estratégia de produto da <a href=\"http://www.canonical.com/\">Canonical Ltd</a>"
+      title: "O blog de Mark Shuttleworth"
+    title: "Notícias e Comunidade"
+  search:
+    article: "Ir ao Artigo"
+    go: Buscar
+    images: Imagens
+    language: "Muda o idioma no qual se pesquisará. Clique para mudar."
+    maps: Mapas
+    news: Notícias
+    placeholder: Pesquisa
+    search: Procurar
+    twitter: "Procurar Twitter"
+    ubuntu: "Ubuntu Suporte"
+    video: Vídeos
+    web: Web
+  support:
+    askubuntu:
+      details: "Um bom lugar para perguntar dúvidas e encontrar a resposta para problemas isolados"
+      title: AskUbuntu.com
+    browser:
+      details: "Se você tiver dúvidas ou problemas quanto a este navegador"
+      title: "Suporte ao navegador web %{browser}"
+    community: "A <a href=\"http://help.ubuntu.com/community\">documentação</a> e as <a href=\"http://help.ubuntu.com/community/CommonQuestions\">perguntas frenquentes</a> da comunidade"
+    forums:
+      details: "Discussões e ajuda"
+      title: "Fóruns da comunidade"
+    help_center: "O Ubuntu tem uma base referencial de ajuda, chamada Centro de Ajuda Ubuntu. Você pode acessá-la simplesmente selecionando o menu <em>Sistema</em> e clicando no item <em>Ajuda e Suporte</em>, lá você pode encontrar ajuda para desempenhar suas tarefas e esclarecer suas dúvidas."
+    manual:
+      details: "Um manual compreensivo para o Ubuntu 10.04, desenvolvido pela própria comunidade"
+      title: "Projeto: Manual Ubuntu"
+    official: "A <a href=\"http://help.ubuntu.com/\">Documentação Oficial</a> e o <a href=\"http://www.ubuntu.com/support/community\">Suporte Comunitário</a>"
+    other: "Há também recursos online muito úteis como:"
+    screencasts:
+      details: "\"Como se faz\" vídeos"
+      title: "Ubuntu Screencasts"
+    title: "Recursos de Suporte"
+  thanks: "Esta página foi criada por <a href=\"http://ryankelln.com/\">Ryan Kelln</a> e é baseada no trabalho de Philipp Antoni e spiceofdesign. Agradecimentos à Rodrigo Martins e <a href=\"http://visionfactory.net/\">Jan Schuermann</a> pelas traduções."
+  this: "Este website é <a href=\"%{url}\">software livre</a>."
+  trademark: "Ubuntu é uma marca registrada da Canonical. Google, Wikipedia, YouTube, e Twitter são marcas de suas respectivas companhias."
+  ubuntu:
+    v10-04:
+      adjective: Lucid
+      animal: Lynx
+    v10-10:
+      adjective: Maverick
+      animal: Meercat
+    v11-04:
+      adjective: Natty
+      animal: Narwhal
+  welcome:
+    p1: "Bem Vindo ao <a href=\"http://ubuntu.com/\">Ubuntu!</a> Para procurar algo na internet, digite a sua pesquisa na caixa acima, escolha em qual dos sites você deseja que a busca seja realizada e clique em Buscar."
+    p2: "Incluindo \"Ubuntu\" ou \"ajuda Ubuntu\" em sua pesquisa, você encontrará ajuda sobre o que procura. É importante incluir a <a href=\"http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers\">versão do Ubuntu</a> a qual você está usando (como 10.04 ou 10.10)."
+    p3: "Por exemplo: <em>Ubuntu 10.04 como assistir DVD</em>"
+    p4: "O Ubuntu tem uma extensa e amigável <a href=\"http://www.ubuntu.com/community\">comunidade</a> que encoraja a expor dúvidas e participar dela. <a href=\"http://www.canonical.com/\">A Canonical</a>, companhia responsável pelo projeto Ubuntu, oferece alguns <a href=\"http://www.ubuntu.com/desktop/services\">serviços de suporte pagos</a>."
+    p5: "Para saber mais sobre os novos recursos do Ubuntu <a href=\"http://www.ubuntu.com/desktop/features\">clique aqui</a>, e <a href=\"http://www.ubuntu.com/project\">aqui</a> para aprender sobre o projeto em si."
+    p6: "O Ubuntu é livre, mas você pode mantê-lo das seguintes formas: <a href=\"http://wiki.ubuntu.com/UbuntuDeveloperWeek\">desenvolvendo-o</a>, <a href=\"http://help.ubuntu.com/community/ReportingBugs\">reportando falhas</a>, <a href=\"http://shop.ubuntu.com\">comprando itens e outros</a>, no e-shop, ou aumentando a sua <a href=\"http://one.ubuntu.com/\">conta UbuntuOne</a>."
+    title: Iniciando

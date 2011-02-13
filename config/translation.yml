@@ -1,0 +1,10 @@
+api_key: 480de855d1051421021f1fe072841395f6de715e
+
+# Optional: locales not to sync with Web Translate It.
+# eg. [:en, :fr] or just 'en'
+# ignore_locales: 'en'
+
+# Optional, only used by wti server
+# before_pull: "echo 'some unix command'"   # Command executed before pulling files
+# after_pull:  "touch tmp/restart.txt"      # Command executed after pulling files
+

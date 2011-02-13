@@ -1,135 +1,96 @@
-meta:
-  title: Ubuntu homepage
-  description: Ubuntu search and help homepage
-  language: English
-
-ubuntu:
-  v10-04:
-    adjective: Lucid
-    animal: Lynx
-  v10-10: 
-    adjective: Maverick 
-    animal: Meercat
-  v11-04:
-    adjective: Natty
-    animal: Narwhal
-
-search:
-  placeholder: Search
-  language: Set the search language. Click to change.
-  go: Go
-  web: Web
-  images: Images
-  maps: Maps
-  news: News
-  article: Go to Article
-  search: Search
-  video: Videos
-  twitter: Search Twitter
-  ubuntu: Ubuntu Help
-
-welcome:
-  title: Getting started
-  p1:
-    Welcome to <a href="http://ubuntu.com/">Ubuntu!</a>
-    To start exploring the Internet, type what you're looking for in the Search box above.
-  p2:
-    To search for help with Ubuntu just add "Ubuntu" or "help Ubuntu" to your search.
-    You may need to include the 
-    <a href="http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers">version of Ubuntu</a>
-    you are using (such as 10.04 or 10.10).
-  p3:
-    "For example: <em>Ubuntu 10.04 how do I view DVDs?</em>"
-  p4:
-    Ubuntu is a large and friendly
-    <a href="http://www.ubuntu.com/community">community</a>
-    that encourages questions and participation.
-    <a href="http://www.canonical.com/">Canonical</a>
-    the company that leads the Ubuntu project also offers a number of paid 
-    <a href="http://www.ubuntu.com/desktop/services">desktop support services</a>.
-  p5:
-    You can find out about the
-    <a href="http://www.ubuntu.com/desktop/features">new features</a>
-    in Ubuntu and learn about 
-    <a href="http://www.ubuntu.com/project">the Ubuntu project</a>
-    itself.
-  p6: |
-    Ubuntu is free but you can support it by:
-    <a href="http://wiki.ubuntu.com/UbuntuDeveloperWeek">getting involved</a>, 
-    <a href="http://help.ubuntu.com/community/ReportingBugs">reporting bugs</a>,
-    <a href="http://shop.ubuntu.com">purchasing great swag and services</a>,
-    at the shop, or upgrade your 
-    <a href="http://one.ubuntu.com/">UbuntuOne account</a>.
-
-support:
-  title: Support Resources
-  help_center:
-    Ubuntu has a built-in help reference, called the Ubuntu Help Center. 
-    You can access it by selecting the <em>System</em> menu and then clicking <em>Help and Support</em>.
-  other: "Other online resources are also very useful:"
-  official:
-    Official <a href="http://help.ubuntu.com/">Ubuntu Documentation</a> and 
-    <a href="http://www.ubuntu.com/support/community">Community Support</a>
-  community:
-    Community <a href="http://help.ubuntu.com/community">documentation</a> and
-    <a href="http://help.ubuntu.com/community/CommonQuestions">common questions</a>
-  askubuntu:
-    title: AskUbuntu.com
-    details: A great place to ask questions and find answers to particular problems
-  forums:
-    title: Ubuntu community forums
-    details: Discussion and help from the community
-  manual:
-    title: Ubuntu Manual Project
-    details: A comprehensive community developed manual for Ubuntu 10.04
-  screencasts:
-    title: Ubuntu Screencasts
-    details: '"How To" videos'
-  browser:
-    title: %1 web browser support
-    details: If you have questions or problems with this browser
-
-news:
-  title: News and Community
-  description: These sites can come in handy for keeping up with Ubuntu news and tips.
-# Uncomment to add a local news site
-#  local:
-#    title: Example Local News Title
-#    url: http://examplelocalnews.com/
-#    details: Example details
-  fridge:
-    title: Ubuntu News
-    details: Also known as "The Fridge", a good place to start with Ubuntu news
-  newsletter:
-    title: Ubuntu Weekly Newsletter
-  omgubuntu:
-    title: OMG Ubuntu
-    details: The latest Ubuntu news, application development updates, information, tips and more
-  brainstorm:
-    title: Ubuntu Brainstorm
-    details: A place to let the community brainstorm ideas for improving Ubuntu
-  shuttleworth:
-    title: Mark Shuttleworth's blog
-    details: Ubuntu's founder and lead of design and product strategy at <a href="http://www.canonical.com/">Canonical Ltd</a>
-  planet:
-    title: Planet Ubuntu
-    details: Blog aggregrator for Ubuntu developers and community members
-  launchpad:
-    details: Bug tracking, <a href="http://launchpad.net/ubuntu/+ppas" title="Personal Package Archives">PPAs</a>, and project pages
-
-foss:
-  title: Free and Open Source Software
-  more: |
-    Free software is more than just the bits that you downloaded and installed on your computer. It is a practice, philosophy and community best illustrated by four principles:
-  freedom0: The freedom to run the program, for any purpose
-  freedom1: The freedom to study how the program works, and change it to make it do what you wish
-  freedom2: The freedom to redistribute copies so you can help your neighbor
-  freedom3: The freedom to distribute copies of your modified versions to others
-  org: 
-    You can learn more about free software at the <a href="http://fsf.org/">Free Software Foundation (FSF)</a>
-    and open source software at the <a href="http://www.opensource.org/">Open Source Initiative (OSI)</a>.
-  ubuntu: In the spirit of free and open source software, Ubuntu is absolutely free to download, use, share and improve however and whenever you like.
-
-trademark: Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies.
-thanks: This page was created by <a href="http://ryankelln.com/">Ryan Kelln</a> and is based on work by Philipp Antoni and spiceofdesign. Thanks to Rodrigo Martins and <a href="http://visionfactory.net/">Jan Schuermann</a> for translations.
-this: This webpage is <a href="%1">free software</a>.
+en:
+  foss:
+    freedom0: "The freedom to run the program, for any purpose"
+    freedom1: "The freedom to study how the program works, and change it to make it do what you wish"
+    freedom2: "The freedom to redistribute copies so you can help your neighbor"
+    freedom3: "The freedom to distribute copies of your modified versions to others"
+    more: "Free software is more than just the bits that you downloaded and installed on your computer. It is a practice, philosophy and community best illustrated by four principles:"
+    org: "You can learn more about free software at the <a href=\"http://fsf.org/\">Free Software Foundation (FSF)</a> and open source software at the <a href=\"http://www.opensource.org/\">Open Source Initiative (OSI)</a>."
+    title: "Free and Open Source Software"
+    ubuntu: "In the spirit of free and open source software, Ubuntu is absolutely free to download, use, share and improve however and whenever you like."
+  meta:
+    description: "Ubuntu search and help homepage"
+    language: English
+    title: "Ubuntu homepage"
+  news:
+    brainstorm:
+      details: "A place to let the community brainstorm ideas for improving Ubuntu"
+      title: "Ubuntu Brainstorm"
+    description: "These sites can come in handy for keeping up with Ubuntu news and tips."
+    fridge:
+      details: "Also known as \"The Fridge\", a good place to start with Ubuntu news"
+      title: "Ubuntu News"
+    launchpad:
+      details: "Bug tracking, <a href=\"http://launchpad.net/ubuntu/+ppas\" title=\"Personal Package Archives\">PPAs</a>, and project pages"
+      title: Launchpad
+    local:
+      details: ~
+      title: ~
+      url: ~
+    newsletter:
+      title: "Ubuntu Weekly Newsletter"
+    omgubuntu:
+      details: "The latest Ubuntu news, application development updates, information, tips and more"
+      title: "OMG Ubuntu"
+    planet:
+      details: "Blog aggregrator for Ubuntu developers and community members"
+      title: "Planet Ubuntu"
+    shuttleworth:
+      details: "Ubuntu's founder and lead of design and product strategy at <a href=\"http://www.canonical.com/\">Canonical Ltd</a>"
+      title: "Mark Shuttleworth's blog"
+    title: "News and Community"
+  search:
+    article: "Go to Article"
+    go: Go
+    images: Images
+    language: "Set the search language. Click to change."
+    maps: Maps
+    news: News
+    placeholder: Search
+    search: Search
+    twitter: "Search Twitter"
+    ubuntu: "Ubuntu Help"
+    video: Videos
+    web: Web
+  support:
+    askubuntu:
+      details: "A great place to ask questions and find answers to particular problems"
+      title: AskUbuntu.com
+    browser:
+      details: "If you have questions or problems with this browser"
+      title: "%{browser} web browser support"
+    community: "Community <a href=\"http://help.ubuntu.com/community\">documentation</a> and <a href=\"http://help.ubuntu.com/community/CommonQuestions\">common questions</a>"
+    forums:
+      details: "Discussion and help from the community"
+      title: "Ubuntu community forums"
+    help_center: "Ubuntu has a built-in help reference, called the Ubuntu Help Center. You can access it by selecting the <em>System</em> menu and then clicking <em>Help and Support</em>."
+    manual:
+      details: "A comprehensive community developed manual for Ubuntu 10.04"
+      title: "Ubuntu Manual Project"
+    official: "Official <a href=\"http://help.ubuntu.com/\">Ubuntu Documentation</a> and <a href=\"http://www.ubuntu.com/support/community\">Community Support</a>"
+    other: "Other online resources are also very useful:"
+    screencasts:
+      details: "\"How To\" videos"
+      title: "Ubuntu Screencasts"
+    title: "Support Resources"
+  thanks: "This page was created by <a href=\"http://ryankelln.com/\">Ryan Kelln</a> and is based on work by Philipp Antoni and spiceofdesign. Thanks to Rodrigo Martins and <a href=\"http://visionfactory.net/\">Jan Schuermann</a> for translations."
+  this: "This webpage is <a href=\"%{url}\">free software</a>."
+  trademark: "Ubuntu is a register trademark of Canonical. Google, Wikipedia, YouTube, and Twitter are all trademarks of their respective companies."
+  ubuntu:
+    v10-04:
+      adjective: Lucid
+      animal: Lynx
+    v10-10:
+      adjective: Maverick
+      animal: Meercat
+    v11-04:
+      adjective: Natty
+      animal: Narwhal
+  welcome:
+    p1: "Welcome to <a href=\"http://ubuntu.com/\">Ubuntu!</a> To start exploring the Internet, type what you're looking for in the Search box above."
+    p2: "To search for help with Ubuntu just add \"Ubuntu\" or \"help Ubuntu\" to your search. You may need to include the <a href=\"http://help.ubuntu.com/community/CommonQuestions#Ubuntu%20Releases%20and%20Version%20Numbers\">version of Ubuntu</a> you are using (such as 10.04 or 10.10)."
+    p3: "For example: <em>Ubuntu 10.04 how do I view DVDs?</em>"
+    p4: "Ubuntu is a large and friendly <a href=\"http://www.ubuntu.com/community\">community</a> that encourages questions and participation. <a href=\"http://www.canonical.com/\">Canonical</a> the company that leads the Ubuntu project also offers a number of paid <a href=\"http://www.ubuntu.com/desktop/services\">desktop support services</a>."
+    p5: "You can find out about the <a href=\"http://www.ubuntu.com/desktop/features\">new features</a> in Ubuntu and learn about <a href=\"http://www.ubuntu.com/project\">the Ubuntu project</a> itself."
+    p6: "Ubuntu is free but you can support it by: <a href=\"http://wiki.ubuntu.com/UbuntuDeveloperWeek\">getting involved</a>, <a href=\"http://help.ubuntu.com/community/ReportingBugs\">reporting bugs</a>, <a href=\"http://shop.ubuntu.com\">purchasing great swag and services</a>, at the shop, or upgrade your <a href=\"http://one.ubuntu.com/\">UbuntuOne account</a>."
+    title: "Getting started"
