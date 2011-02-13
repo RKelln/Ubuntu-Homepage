@@ -88,6 +88,7 @@ images and design are based on:
 * [jQuery](http://jquery.com)
 
 Other thanks:
+
 * pmo for hosting on [noobuntu.org](http://noobuntu.org/)
 * JayPiEs, allrod5, Stribianese91, for suggestions and bug fixes
 
