@@ -70,9 +70,11 @@ Thanks to [webtranslateit.com](https://webtranslateit.com), translating the page
 [Make a request to join the translation team](https://webtranslateit.com/en/projects/1574-Ubuntu-Start-page/invitation_request) to update existing translations or request new ones.
 
 Current translations generously provided by:
+
 * JayPiEs (Jan Schuermann): Deutch
 * allrod5 (Rodrigo Martins): Português
 * albertoi: Español
+
 Thanks everyone!
 
 Thanks
@@ -84,8 +86,10 @@ images and design are based on:
 * [spiceofdesign's Ubuntu homepage](http://spiceofdesign.deviantart.com/art/Ubuntu-Homepage-189798952)
 * [HTML5Boilerplate](http://html5boilerplate.com)
 * [jQuery](http://jquery.com)
-* pmo for husting on [noobuntu.org](http://noobuntu.org/)
 
+Other thanks:
+* pmo for hosting on [noobuntu.org](http://noobuntu.org/)
+* JayPiEs, allrod5, Stribianese91, for suggestions and bug fixes
 
 License
 -------

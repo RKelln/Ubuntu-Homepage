@@ -1,7 +1,7 @@
 Release History
 =============
 
-* __0.3: *12 Feb 2011* Internationalization initialized
+* __0.3: *12 Feb 2011* Internationalization initialized__
     * easier to modify default language order
     * use HTML 5 localStorage for remembering search engine and language preference
     * add News search to Google
